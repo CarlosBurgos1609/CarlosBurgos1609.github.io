@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="shorcut icon" href="img/logo1.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/stile.css">
-    <!-- <?php include("cnx_db.php");?> -->
-</head>
+    <link rel="stylesheet" href="estilo/stile.css" />
+  </head>
 
-<body>
+  <body>
     <div>
-        <!--action="inbox.html" //dentro del form -->
-        <form name="Register" action="http://localhost/CarlosBurgos1609.github.io/back/users/create_user.php" method="post">
-            <!-- <font color="#FFFFFF"> -->
-            <center>
-                <h1>Register</h1>
+      <form
+        name="Register"
+        action="http://localhost/OscarNarvaez.github.io/back/users/create_user.php"
+        method="post"
+      >
+        <center>
+          <h1>Register</h1>
 
-                <input name="name" placeholder="Nombres de usuario" type="text" required><br><br>
-                <input name="name2" placeholder="Apellidos de usuario" type="text" required><br><br>
-                <input name="númber" placeholder="300..." type="text" required><br><br>
-                <input name="email" placeholder="root@gmail.com" type="email" required><br><br>
-                <input name="password" placeholder="*******" type="password" required><br><br>
-                <!-- 
-                    <input type="text" placeholder="name" required><br><br>
-                    <input type="text" placeholder="name2" required><br><br>
-                    <input type="number" placeholder="númber"><br><br>
-                    <input type="email" class="input_email" placeholder="Example@gmail.com" required><br><br>
-                    <input type="password" placeholder="password" required><br><br>
-                    <select name="pais" class="select" required>
-                        <option>Seleccione su país</option>
-                        <option>Amsterdam</option>
-                        <option>Colombia</option>
-                        <option>Japon</option>
-                        <option>London</option>
-                        <option>Nigeria</option>
-                        <option>venetsia</option>
-                        <option>Japon</option>
-                    </select><br><br> -->
-                <!-- <p>Acepta los terminos y condiciones&nbsp;&nbsp;<input type="radio" required></p> -->
-                <!-- <input type="submit" value="REGISTER" class="input-submit" ><br><br> -->
-                <button>Register</button>
-                <!--target="_blank"-->
-            </center>
-            <!-- </font> -->
-        </form>
+          <input
+            name="name"
+            placeholder="Nombres de usuario"
+            type="text"
+            required
+          /><br /><br />
+          <input
+            name="name2"
+            placeholder="Apellidos de usuario"
+            type="text"
+            required
+          /><br /><br />
+          <input
+            name="númber"
+            placeholder="+57 312-000-3121"
+            type="text"
+            required
+          /><br /><br />
+          <input
+            name="email"
+            placeholder="yourEmail@gmail.com"
+            type="email"
+            required
+          /><br /><br />
+          <input
+            name="password"
+            placeholder="********"
+            type="password"
+            required
+          /><br /><br />
+          <button>Register</button>
+        </center>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
