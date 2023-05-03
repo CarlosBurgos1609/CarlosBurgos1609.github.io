@@ -14,16 +14,18 @@
 <body>
     <div>
         <!--action="inbox.html" //dentro del form -->
-        <form name="Register" action="http://localhost/CarlosBurgos1609.github.io/back/users/create_user.php" method="post">
+        <!-- <form name="Register" action="http://localhost/CarlosBurgos1609.github.io/back/users/create_user.php" method="POST"> -->
+        <form name="Register" action="../back/users/create_user.php" method="POST">
+        <!-- <form name="Register" action="create_user.php" method="POST"> -->
             <!-- <font color="#FFFFFF"> -->
             <center>
                 <h1>Register</h1>
 
-                <input name="name" placeholder="Nombres de usuario" type="text" required><br><br>
-                <input name="name2" placeholder="Apellidos de usuario" type="text" required><br><br>
-                <input name="númber" placeholder="300..." type="text" required><br><br>
-                <input name="email" placeholder="root@gmail.com" type="email" required><br><br>
-                <input name="password" placeholder="*******" type="password" required><br><br>
+                <input name="nombre" placeholder="Nombres de usuario" type="text" id="nombre" required><br><br>
+                <input name="nombre2" placeholder="Apellidos de usuario" type="text" id="nombre2" required><br><br>
+                <input name="número" placeholder="300..." type="text" id="número" ><br><br>
+                <input name="email" placeholder="root@gmail.com" type="email" id="email" required><br><br>
+                <input name="password" placeholder="*******" type="password" id="password" required><br><br>
                 <!-- 
                     <input type="text" placeholder="name" required><br><br>
                     <input type="text" placeholder="name2" required><br><br>
@@ -42,7 +44,7 @@
                     </select><br><br> -->
                 <!-- <p>Acepta los terminos y condiciones&nbsp;&nbsp;<input type="radio" required></p> -->
                 <!-- <input type="submit" value="REGISTER" class="input-submit" ><br><br> -->
-                <button>Register</button>
+                <button type="submit">Register</button>
                 <!--target="_blank"-->
             </center>
             <!-- </font> -->
