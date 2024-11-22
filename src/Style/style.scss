@@ -52,7 +52,7 @@
     }
 
     & .nav-list li:hover {
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
     & .nav-list li a{
         color:#208be4;
@@ -65,7 +65,7 @@
         line-height: normal;
         font-size: 20px;
         border-radius: 7px;
-        float: right;
+        float: left;
         -webkit-transition:  all 500ms ease;
         -o-transition:  all 500ms ease;
         transition:  all 500ms ease;
@@ -200,7 +200,7 @@ body {
         }
 
         & label img:hover {
-            transform: scale(1.2);
+            transform: scale(0.9);
         }
 
         & .nav-list {
@@ -215,12 +215,13 @@ body {
                 );
             display: none;
             border-radius: 7px;
+            text-align: left;
 
         }
 
         & .nav-list ul li {
             width: 100%;
-            margin: 10px;
+            margin: 20px;
             padding-right: 20px;
         }
 
