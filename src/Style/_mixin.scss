@@ -1,0 +1,29 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-style: italic;
+    }
+}
+
+@mixin left {
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+        font-style: italic;
+    }
+}
+
+@mixin right {
+    align-items: right;
+    justify-content: right;
+
+    h2 {
+        font-style: italic;
+    }
+}
