@@ -22,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    padding: 5px 10%;
+    padding: 5px 15%;
     font-family: 'Times New Roman', Times, serif;
     margin: 2px;
     border-radius: 9px;
@@ -55,7 +55,7 @@
         transform: scale(1.1);
     }
     & .nav-list li a{
-        color:#ECE2C6;
+        color:#208be4;
     }
 
     & .nav-list li a:hover {
@@ -177,19 +177,20 @@ body {
 
     @media(max-width:1200px) {
         .content {
-            min-height: 80px;
+            min-height: 100px;
             border-radius: 7px;
         }
 
         & {
             top: 0;
             padding: 20px;
-            margin-right: 10px;
+            margin-right: 20px;
             margin: 10px;
+            
         }
 
         & label {
-            display: initial;
+            display: flex;
         }
 
         & label img {
@@ -206,7 +207,7 @@ body {
             position: absolute;
             top: 100%;
             left: 0;
-            right: 1;
+            right: auto;
             background: linear-gradient(90deg,
                     rgb(76, 128, 223)0%,
                     #FFFFFF 100%,
@@ -220,6 +221,7 @@ body {
         & .nav-list ul li {
             width: 100%;
             margin: 10px;
+            padding-right: 20px;
         }
 
         #menu:checked~.nav-list {
