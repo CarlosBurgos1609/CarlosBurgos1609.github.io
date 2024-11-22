@@ -11,12 +11,18 @@ function App() {
 
     <div class="content">
       <header class="header">
+
+        {/* <div class="logo">
+          <a href="index.html">
+            <img src={Mylogo} className="App-logo" alt="logo" />
+          </a>
+        </div> */}
+        <div class="menu container ">
         <div class="logo">
           <a href="index.html">
             <img src={Mylogo} className="App-logo" alt="logo" />
           </a>
         </div>
-        <div class="menu container ">
 
           <input type="checkbox" id="menu" />
           <label for="menu">
@@ -29,8 +35,8 @@ function App() {
               <li><a href="#">Aplicaciones</a></li>
               <li><a href="#">Certificados</a></li>
               <li><a href="#">Trabajos</a></li>
-              <li><a href="Front/contacts.html">Contactos</a></li>
-              <li><a href="Front/contacts.html">Redes sociales</a></li>
+              <li><a href="#">Contactos</a></li>
+              <li><a href="#">Redes sociales</a></li>
 
               {/* <a href="#" class="btn"><button class="rounded">Iniciar sesión</button></a>
                 <a href="#" class="btn"><button class="rounded">Registrarse</button></a> */}
