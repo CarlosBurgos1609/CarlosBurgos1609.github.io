@@ -1,39 +1,64 @@
-.App {
-    text-align: center;
+$dark: #131313;
+$light: #ffffff;
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  transition-duration: 0.3s;
+
+  img{
+    width: 120px;
+    margin-bottom: 1rem;
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  h1{
+    font-weight: 900;
+    font-size: 48px;
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
+  h2{
+    font-size: 42px;
+    font-weight: 700;
+    b{font-weight: 900;}
+    b:first-child{
+      color: aqua;
+    }
+    b:last-child{
+      color: red;
     }
   }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
+  button{
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition-duration: 0.3s;
+    font-weight: bold;
+    &:hover{
+      transform: scale(1.1);
     }
   }
+  &.dart{
+    background-color: $dark;
+    color: $light;
+    button{
+      background-color: $light;
+      color: $dark;
+    }
+  }
+  &.light{
+    background-color: $light;
+    color: $dark;
+    button{
+      background-color: $dark;
+      color: $light;
+    }
+  }
+}
+
   

@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.0b1ae3f4.css",
-    "main.js": "/build/static/js/main.fbeb0a3a.js",
-    "static/js/453.daebc7d9.chunk.js": "/build/static/js/453.daebc7d9.chunk.js",
+    "main.css": "/build/static/css/main.ec3cdd86.css",
+    "main.js": "/build/static/js/main.246b9e35.js",
+    "static/js/453.22ddbe9c.chunk.js": "/build/static/js/453.22ddbe9c.chunk.js",
+    "static/media/claro.png": "/build/static/media/claro.58ec4e9064134f017936.png",
     "static/media/Mylogo.png": "/build/static/media/Mylogo.1ec325ce4331f4a0d9e0.png",
+    "static/media/oscuro.png": "/build/static/media/oscuro.d1bbfeca27c9c357a197.png",
     "static/media/menu.png": "/build/static/media/menu.5eca8aba87e4457cb6e8.png",
     "index.html": "/build/index.html",
-    "main.0b1ae3f4.css.map": "/build/static/css/main.0b1ae3f4.css.map",
-    "main.fbeb0a3a.js.map": "/build/static/js/main.fbeb0a3a.js.map",
-    "453.daebc7d9.chunk.js.map": "/build/static/js/453.daebc7d9.chunk.js.map"
+    "main.ec3cdd86.css.map": "/build/static/css/main.ec3cdd86.css.map",
+    "main.246b9e35.js.map": "/build/static/js/main.246b9e35.js.map",
+    "453.22ddbe9c.chunk.js.map": "/build/static/js/453.22ddbe9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b1ae3f4.css",
-    "static/js/main.fbeb0a3a.js"
+    "static/css/main.ec3cdd86.css",
+    "static/js/main.246b9e35.js"
   ]
 }
