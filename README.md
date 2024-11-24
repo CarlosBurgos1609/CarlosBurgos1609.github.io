@@ -21,9 +21,9 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 -->
 <h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>
 <p align="center">
-  <a href="https://carlosburgos1609.github.io/build/"target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/web.png" alt="Website"/></a>
+  <a href="https://carlosburgos1609.github.io/build/"><img src="https://img.icons8.com/bubbles/50/000000/web.png" alt="Website"/></a>
 	<a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
-	<a href="https://github.com/CarlosBurgos1609"target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
+	<a href="https://github.com/CarlosBurgos1609"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
 	<a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook"/></a>
 	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
