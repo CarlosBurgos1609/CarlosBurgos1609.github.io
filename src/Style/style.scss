@@ -20,7 +20,7 @@ $color-light: #000;
 .header {
     background: $light;
     display: flex;
-    // overflow: hidden;
+    //overflow: hidden;
     // margin-bottom: 20px;
     width: 100%;
     justify-content: space-between;
@@ -72,6 +72,7 @@ $color-light: #000;
         & ul li img {
             width: 120px;
             border-radius: 120px;
+            display: flex;
             cursor: pointer;
             -webkit-transition: all 2s ease;
             -o-transition: all 20s ease;
@@ -263,7 +264,7 @@ body {
 
         & .nav-list ul li {
             width: 100%;
-            margin: 20px;
+            margin: 10px;
             padding-right: 20px;
         }
 
