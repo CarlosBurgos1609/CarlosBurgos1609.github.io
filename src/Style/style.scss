@@ -20,6 +20,7 @@ $color-light: #000;
 .header {
     background: $light;
     display: flex;
+    position: absolute;
     //overflow: hidden;
     // margin-bottom: 20px;
     width: 100%;
@@ -81,10 +82,10 @@ $color-light: #000;
             & img:hover {
                 width: 120px;
                 -webkit-transition: all 2s ease;
-            -o-transition: all 20s ease;
-            transition: all 20s ease;
+                -o-transition: all 20s ease;
+                transition: all 20s ease;
                 // margin: 10px;
-            } 
+            }
         }
 
         & li a:hover {
@@ -100,8 +101,8 @@ $color-light: #000;
             transition: all 500ms ease;
         }
     }
-    
-    
+
+
 
     & .menu .btn button {
         --color: rgb(127, 127, 240);
@@ -159,12 +160,14 @@ $color-light: #000;
 
         }
     }
+
     &.dark {
         background-color: $dark;
         color: $color-dark;
         cursor: pointer;
 
     }
+
     &.light {
         background-color: $light;
         color: $color-light;
@@ -178,10 +181,10 @@ body {
     background-color: #ffffff;
 }
 
- .container {
-     display: flex;
-     justify-content: center;
-     margin-top: 0 auto;
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0 auto;
 
 }
 
@@ -192,7 +195,7 @@ body {
     background: linear-gradient(90deg,
             rgb(76, 128, 223)0%,
             #FFFFFF 100%);
-    position: fixed;    
+    position: fixed;
 }
 
 .menu {
@@ -283,6 +286,7 @@ body {
             display: initial;
         }
     }
+
 }
 
 .part {
@@ -324,7 +328,7 @@ body {
         flex-direction: column;
 
 
-        // margin: 8px;   
+        // margin: 8px;
         & h1 {
             @include m.center;
             color: rgb(255, 255, 255);
@@ -341,8 +345,7 @@ body {
         border: 1px solid #ccc;
         margin: 8px;
         border-radius: 7px;
-        @include m.center;
-        flex-direction: column;
+
 
         & h1 {
             @include m.center;
@@ -354,7 +357,35 @@ body {
                     #FFFFFF 100%,
 
                 );
+            & img{
+                width: 40px;
+                height: auto;
+                // filter: invert(50%);
+            }
         }
+        & .spotify{
+            & img{
+                // @include m.right;
+                float: left;
+                margin-top: 40px;
+                margin-right: 15px; 
+                // display: flex;
+                //  direction: flex;
+                // flex-direction: row;
+            }
+            & .playlists{
+                float: right;
+            }
+        }
+        
+        & iframe {
+            // @include m.right;
+            align-items: left;
+            border-radius: 12px;
+            direction: flex;
+        }
+
+
 
     }
 
@@ -393,7 +424,7 @@ body {
 //     background-color: black;
 
 // }
-// .switch i { 
+// .switch i {
 //     font-size: 1rem;
 //     color: aqua;
 // }
