@@ -45,7 +45,33 @@ const Layout = () => {
             </nav>
         </div>
     </header>
-    <Outlet />
+        <Outlet />
+
+        <footer>
+            <div>
+                <h3>Redes sociales</h3>
+                <div class="socialn">
+                <a href="https://carlosburgos1609.github.io/build/" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/web.png" alt="Website" /></a>
+                <a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail" /></a>
+                <a href="https://github.com/CarlosBurgos1609" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram" /></a>
+                <a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube" /></a>
+                <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord" /></a>
+                <a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/x.png" alt="twitter" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/pinterest.png" alt="pinterest" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/reddit.png" alt="reddit" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/skype.png" alt="skype" /></a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitch.png" alt="twitch" /></a>
+                </div>
+            </div>
+        </footer>
     </div>;
 }
 export default Layout;
