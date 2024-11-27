@@ -516,8 +516,8 @@ body {
     }
 }
 footer{
-    min-height: 8dvh;
-    padding: 10px;
+    min-height: 7dvh;
+    padding: 3px;
     border-radius: 7px;
     text-align: center;
     background: $light;
@@ -542,7 +542,7 @@ footer{
     @media(max-width:999px) {
         .content {
             min-height: 70px;
-            border-radius: 7px;
+            border-radius: 3px;
         }
 
         & {
