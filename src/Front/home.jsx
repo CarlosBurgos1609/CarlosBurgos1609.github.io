@@ -23,9 +23,9 @@ function Home() {
       <section class="containers container2">
 
         <h1><img src={spotify} alt="spotify" /> My playlists <img src={spotify} alt="spotify" /></h1>
-        
+
         <div class="spotify">
-          <div class="img-spotify"><img src={spotify} alt="spotify" /></div>
+          <div class="img-spotify"><a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j" target="_blank"><img src={spotify} alt="spotify"/></a></div>
           <div class="playlists">
             <iframe src="https://open.spotify.com/embed/playlist/5P6n1BNwogBmLXZqIwlk3e?utm_source=generator" width="100%" height="84" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <iframe src="https://open.spotify.com/embed/playlist/7ARdbqV0W6SQSYyJ0pH3ZY?utm_source=generator" width="100%" height="84" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -34,14 +34,6 @@ function Home() {
         </div>
 
       </section>
-      {/* <section class="containers container1">
-        <h1>Logo y Definción</h1>
-        <img src={Mylogo} alt="logo" />
-        <iframe src="https://open.spotify.com/embed/playlist/5P6n1BNwogBmLXZqIwlk3e?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe src="https://open.spotify.com/embed/playlist/6Zyv4Tzir19kAyHXLYgziF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </section> */}
-
-
     </body >
 
 

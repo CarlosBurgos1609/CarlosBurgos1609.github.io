@@ -357,40 +357,34 @@ body {
                     #FFFFFF 100%,
 
                 );
-            & img{
+
+            & img {
                 width: 40px;
                 height: auto;
                 // filter: invert(50%);
             }
         }
-        & .spotify{
+
+        & .spotify {
             display: flex;
             justify-content: center;
             padding-top: 5px;
+            margin-right: 3px;
+            @include m.center;
             flex-wrap: wrap;
-            & .img-spotify{
-                margin-right: 50px ;
-                @include m.center;
-                & img{
+
+            & .img-spotify {
+                margin: 0 auto;
+                & img {
                     float: left;
-                    @include m.center;
+                    top: 50%;
+                    right: 50%;
                 }
-                
             }
-            & .playlists{
+            & .playlists {
                 float: right;
             }
         }
-        
-        & iframe {
-            // @include m.right;
-            align-items: left;
-            border-radius: 12px;
-            direction: flex;
-        }
-
-
-
     }
 
     &.container3 {
