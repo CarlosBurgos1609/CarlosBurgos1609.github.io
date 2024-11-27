@@ -322,13 +322,9 @@ body {
 
     &.container1 {
         border: 1px solid #ccc;
-        margin: 8px;
+        margin-top: 8px;
         border-radius: 7px;
-        @include m.center;
-        flex-direction: column;
-
-
-        // margin: 8px;
+        flex-wrap: wrap;
         & h1 {
             @include m.center;
             color: rgb(255, 255, 255);
@@ -339,13 +335,27 @@ body {
                     #FFFFFF 100%,
                 );
         }
+        & .log{
+            justify-content: center;
+
+            & .logo{
+                @include m.center;
+            }
+            & .text{
+                width: 100%;
+            }
+
+
+            
+        }
+        
     }
 
     &.container2 {
         border: 1px solid #ccc;
         margin: 8px;
         border-radius: 7px;
-
+        flex-wrap: wrap;
 
         & h1 {
             @include m.center;
