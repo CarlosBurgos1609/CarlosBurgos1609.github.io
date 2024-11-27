@@ -364,13 +364,18 @@ body {
             }
         }
         & .spotify{
-            & img{
-                // @include m.right;
-                float: left;
-                margin-top: 40px; 
-                // display: flex;
-                //  direction: flex;
-                // flex-direction: row;
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            flex-wrap: wrap;
+            & .img-spotify{
+                margin-right: 50px ;
+                @include m.center;
+                & img{
+                    float: left;
+                    @include m.center;
+                }
+                
             }
             & .playlists{
                 float: right;
