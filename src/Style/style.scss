@@ -537,6 +537,28 @@ footer{
         & img{
             margin: 1px;
         }
+    
+    }
+    @media(max-width:999px) {
+        .content {
+            min-height: 70px;
+            border-radius: 7px;
+        }
+
+        & {
+            top: 0;
+            padding: 20px;
+            margin-right: 20px;
+            margin: 10px;
+
+        }
+
+
+        & img {
+            width: 40px;
+            height: auto;
+            margin-right: 30px;
+        }
     }
     
 
