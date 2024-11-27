@@ -35,7 +35,7 @@ function App() {
             <li><a href="#">Aplicaciones</a></li>
             <li><a href="#">Certificados</a></li>
             <li><a href="#">Trabajos</a></li>
-            {/* <li><a href="#">Contactos</a></li> */}
+            <li><a href="#">Contactos</a></li> 
             <li><a href="#">Redes sociales</a></li>
             <li>
               <img src={icon} alt="dark" onClick={switchTheme} />

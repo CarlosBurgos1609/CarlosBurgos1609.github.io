@@ -21,9 +21,7 @@ function Home() {
         </p>
       </section>
       <section class="containers container2">
-
-        <h1><img src={spotify} alt="spotify" /> My playlists <img src={spotify} alt="spotify" /></h1>
-
+        <h1><img src={spotify} alt="spotify" /> Mis Playlists <img src={spotify} alt="spotify" /></h1>
         <div class="spotify">
           <div class="img-spotify"><a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j" target="_blank"><img src={spotify} alt="spotify"/></a></div>
           <div class="playlists">
@@ -32,7 +30,7 @@ function Home() {
             <iframe src="https://open.spotify.com/embed/playlist/6F2QF1tMHv6U9B8QMn1pbR?utm_source=generator" width="100%" height="84" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
-
+        <div class="buttonplay"><a href="#"><button class="moreplay">Más playlists</button></a></div>
       </section>
     </body >
 
