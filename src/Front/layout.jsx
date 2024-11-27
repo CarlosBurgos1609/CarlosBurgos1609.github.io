@@ -28,12 +28,13 @@ const Layout = () => {
             <nav class="nav-list">
                 <ul>
                     <li><Link to="/build">Inicio</Link></li>
-                    <li><Link to="languages">Lenguajes</Link></li>
-                    <li><Link to="#">Aplicaciones</Link></li>
-                    <li><Link to="#">Certificados</Link></li>
-                    <li><Link to="#">Trabajos</Link></li>
-                    <li><Link to="#">Contactos</Link></li>
-                    <li><Link to="#">Redes sociales</Link></li>
+                    <li><Link to="Languages">Lenguajes</Link></li>
+                    <li><Link to="Aplicactions">Aplicaciones</Link></li>
+                    <li><Link to="Certificates">Certificados</Link></li>
+                    <li><Link to="Works">Trabajos</Link></li>
+                    <li><Link to="Contacts">Contactos</Link></li>
+                    <li><Link to="SocialNetworks">Redes sociales</Link></li>
+                    <li><Link to="PlayLists">PlayLists</Link></li>
                     {/* <li>
                         <img src={icon} alt="dark" onClick={switchTheme} />
                     </li> */}
