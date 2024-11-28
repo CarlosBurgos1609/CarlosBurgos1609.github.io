@@ -15,22 +15,19 @@ function App() {
 
   return (
     <div>
-      <Router basename="/carlosburgos1609.github.io/build">
       <Routes>
         <Route path="/build" element={<Layout />}>
           <Route path="/build" element={<Home />} />
-          <Route path="Languages" element={<Languages />} />
-          <Route path="Aplicactions" element={<Aplicactions />} />
-          <Route path="Certificates" element={<Certificates />} />
-          <Route path="Works" element={<Works />} />
-          <Route path="Contacts" element={<Contacts />} />
-          <Route path="SocialNetworks" element={<SocialNetworks />} />
-          <Route path="PlayLists" element={<PlayLists />} />
+          <Route path="languages" element={<Languages />} />
+          <Route path="aplicactions" element={<Aplicactions />} />
+          <Route path="certificates" element={<Certificates />} />
+          <Route path="works" element={<Works />} />
+          <Route path="contacts" element={<Contacts />} />
+          <Route path="socialNetworks" element={<SocialNetworks />} />
+          <Route path="playlists" element={<PlayLists />} />
           <Route path="*" element={<Error />} />
         </Route>
-
       </Routes>
-      </Router>
     </div>
   );
 }

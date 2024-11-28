@@ -1,7 +1,7 @@
 import { UseState } from 'react';
 import { Link, Outlet } from "react-router-dom";
-import moon from './../img/oscuro.png'
-import sun from './../img/claro.png'
+// import moon from './../img/oscuro.png'
+// import sun from './../img/claro.png'
 import './../Style/style.scss'
 import Mylogo from './../img/Mylogo.png'
 import menu from './../img/menu.png'
@@ -28,13 +28,13 @@ const Layout = () => {
             <nav class="nav-list">
                 <ul>
                     <li><Link to="/build">Inicio</Link></li>
-                    <li><Link to="Languages">Lenguajes</Link></li>
-                    <li><Link to="Aplicactions">Aplicaciones</Link></li>
-                    <li><Link to="Certificates">Certificados</Link></li>
-                    <li><Link to="Works">Trabajos</Link></li>
-                    <li><Link to="Contacts">Contactos</Link></li>
-                    <li><Link to="SocialNetworks">Redes sociales</Link></li>
-                    <li><Link to="PlayLists">PlayLists</Link></li>
+                    <li><Link to="languages">Lenguajes</Link></li>
+                    <li><Link to="aplicactions">Aplicaciones</Link></li>
+                    <li><Link to="certificates">Certificados</Link></li>
+                    <li><Link to="works">Trabajos</Link></li>
+                    <li><Link to="contacts">Contactos</Link></li>
+                    <li><Link to="socialNetworks">Redes sociales</Link></li>
+                    <li><Link to="playlists">PlayLists</Link></li>
                     {/* <li>
                         <img src={icon} alt="dark" onClick={switchTheme} />
                     </li> */}
