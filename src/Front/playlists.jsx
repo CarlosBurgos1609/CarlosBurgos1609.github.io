@@ -1,6 +1,7 @@
 import './../Style/style.scss';
 import Mylogo from './../img/Mylogo.png'
 import spotify from './../img/spotify.png'
+import perfil from './../img/perfil.png'
 
 
 
@@ -15,6 +16,7 @@ function PlayLists() {
         <section class="playlist">
           <h1><img src={spotify} alt="spotify-logo" />Play Lists<img src={spotify} alt="spotify-logo" /></h1>
           <div class="wrapper">
+            <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target='_blank'><img src={perfil} alt="perfil" /></a>
             <div class="slider-container">
               <div class="slider-item">
                 {/* rock 80 y 90 */}
