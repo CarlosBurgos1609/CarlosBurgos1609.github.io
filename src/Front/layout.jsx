@@ -27,7 +27,7 @@ const Layout = () => {
             </label>
             <nav class="nav-list">
                 <ul>
-                    <li><Link to="/build">Inicio</Link></li>
+                    <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/languages">Lenguajes</Link></li>
                     <li><Link to="/aplicactions">Aplicaciones</Link></li>
                     <li><Link to="/certificates">Certificados</Link></li>

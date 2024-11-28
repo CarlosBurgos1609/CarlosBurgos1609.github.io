@@ -13,7 +13,6 @@ import NotFound from './Front/404';
 function App() {
   return (
     <Routes>
-      {/* Rutas definidas bajo el Layout principal */}
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="languages" element={<Languages />} />
@@ -24,7 +23,6 @@ function App() {
         <Route path="socialNetworks" element={<SocialNetworks />} />
         <Route path="playlists" element={<Playlists />} />
       </Route>
-      {/* Ruta para cuando no se encuentra la página */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
