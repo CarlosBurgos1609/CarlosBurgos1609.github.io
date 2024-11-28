@@ -25,8 +25,8 @@ function App() {
           <Route path="contacts" element={<Contacts />} />
           <Route path="socialNetworks" element={<SocialNetworks />} />
           <Route path="playLists" element={<PlayLists />} />
-        </Route>
           <Route path="*" element={<Error />} />
+        </Route>
 
       </Routes>
     </div>

@@ -496,7 +496,7 @@ body {
         }
 
         $slider-width: 98%; 
-        $iframe-height: 352px; // Altura fija del iframe
+        $iframe-height: 352px;
 
         .wrapper {
             width: $slider-width;
@@ -506,13 +506,13 @@ body {
 
             .slider-container {
                 display: flex;
-                overflow-x: auto; // Permite hacer scroll horizontal
-                scroll-snap-type: x mandatory; // Activa el "snap" al deslizar
-                gap: 10px; // Espaciado entre los iframes
+                overflow-x: auto; 
+                scroll-snap-type: x mandatory; 
+                gap: 10px; 
                 padding-bottom: 20px;
-                scrollbar-width: none;
+                // scrollbar-width: none;
                 &::-webkit-scrollbar {
-                    display: none; // Oculta la barra en navegadores basados en WebKit (Chrome, Edge, Safari)
+                    display: none; 
                   }
 
                 .slider-item {
