@@ -203,7 +203,6 @@ body {
 
 .menu {
     position: absolute;
-    // top: 10px;
     left: 0;
     right: 0;
     align-items: center;
@@ -496,49 +495,77 @@ body {
 
         }
 
-        & .play {
-            display: flex;
-            justify-content: center;
-            padding-top: 5px;
-            margin-right: 3px;
-            @include m.center;
-            flex-wrap: wrap;
+        $slider-width: 98%; 
+        $iframe-height: 352px; // Altura fija del iframe
 
-            & .colum-1 {
-                margin-right: 10px;
+        .wrapper {
+            width: $slider-width;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
 
-            }
+            .slider-container {
+                display: flex;
+                overflow-x: auto; // Permite hacer scroll horizontal
+                scroll-snap-type: x mandatory; // Activa el "snap" al deslizar
+                gap: 10px; // Espaciado entre los iframes
+                padding-bottom: 20px;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none; // Oculta la barra en navegadores basados en WebKit (Chrome, Edge, Safari)
+                  }
 
-            & .colum-2 {
-                margin-left: 10px;
+                .slider-item {
+                    flex: 0 0 auto; // Evita que los elementos se redimensionen
+                    width: 100%; // Mantiene el ancho del iframe
+                    max-width: 500px; // Ajusta si quieres limitar el tamaño
+                    height: $iframe-height; // Altura fija
+                    scroll-snap-align: start; // Cada elemento se ajusta al inicio del scroll
+
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+                }
             }
         }
+
+
+
+
+
     }
 }
-footer{
+
+footer {
     min-height: 7dvh;
     padding: 3px;
     border-radius: 7px;
     text-align: center;
     background: $light;
-    & h3{
+
+    & h3 {
         border-radius: 7px;
-        
+
         width: 100%;
         align-items: center;
         text-align: center;
         color: #FFFFFF;
     }
-    & .socialn{
+
+    & .socialn {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        & img{
+
+        & img {
             margin: 1px;
         }
-    
+
     }
+
     @media(max-width:999px) {
         .content {
             min-height: 70px;
@@ -560,7 +587,7 @@ footer{
             margin-right: 30px;
         }
     }
-    
+
 
 }
 
