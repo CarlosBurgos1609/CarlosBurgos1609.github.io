@@ -497,22 +497,23 @@ body {
             margin: auto;
             text-align: center;
             & .perfil{
-                display: flex;
+                // display: flex;
                 overflow-x: auto;
+                height: 100%;
                 scroll-snap-type: x mandatory;
-                gap: 10px;
                 scrollbar-width: none;
-                
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 img{
+                    margin: 2px;
                     scroll-snap-align: start;
-                    width: 100%;
                    justify-items: center;
                     border-radius: 7px;
-                    flex: 0 0 auto;
-                    // gap: 10px;
+                    flex: 0 0 auto; 
+                    border: none;
+                    width: 100%;
+                    height: auto;
                     border: none;
     
                 }
