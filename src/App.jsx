@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <Router basename="/carlosburgos1609.github.io/build">
       <Routes>
         <Route path="/build" element={<Layout />}>
           <Route path="/build" element={<Home />} />
@@ -29,6 +30,7 @@ function App() {
         </Route>
 
       </Routes>
+      </Router>
     </div>
   );
 }
