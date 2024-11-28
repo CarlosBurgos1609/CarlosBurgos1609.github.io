@@ -28,13 +28,13 @@ const Layout = () => {
             <nav class="nav-list">
                 <ul>
                     <li><Link to="/build">Inicio</Link></li>
-                    <li><Link to="languages">Lenguajes</Link></li>
-                    <li><Link to="aplicactions">Aplicaciones</Link></li>
-                    <li><Link to="certificates">Certificados</Link></li>
-                    <li><Link to="works">Trabajos</Link></li>
-                    <li><Link to="contacts">Contactos</Link></li>
-                    <li><Link to="socialNetworks">Redes sociales</Link></li>
-                    <li><Link to="playlists">PlayLists</Link></li>
+                    <li><Link to="/languages">Lenguajes</Link></li>
+                    <li><Link to="/aplicactions">Aplicaciones</Link></li>
+                    <li><Link to="/certificates">Certificados</Link></li>
+                    <li><Link to="/works">Trabajos</Link></li>
+                    <li><Link to="/contacts">Contactos</Link></li>
+                    <li><Link to="/socialNetworks">Redes sociales</Link></li>
+                    <li><Link to="/playlists">PlayLists</Link></li>
                     {/* <li>
                         <img src={icon} alt="dark" onClick={switchTheme} />
                     </li> */}
@@ -51,12 +51,12 @@ const Layout = () => {
             <div>
                 <h3>Redes sociales</h3>
                 <div class="socialn">
-                <a href="https://github.com/CarlosBurgos1609" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub" /></a>
-                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn" /></a>
-                <a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook" /></a>
-                <a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram" /></a>
-                <a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube" /></a>
-                <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify" /></a>
+                    <a href="https://github.com/CarlosBurgos1609" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub" /></a>
+                    <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram" /></a>
+                    <a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube" /></a>
+                    <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify" /></a>
                 </div>
             </div>
         </footer>
