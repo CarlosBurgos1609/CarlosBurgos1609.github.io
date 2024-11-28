@@ -35,7 +35,7 @@ function Home() {
             <iframe src="https://open.spotify.com/embed/playlist/6F2QF1tMHv6U9B8QMn1pbR?utm_source=generator" width="100%" height="84" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
-        <div class="buttonplay"><a href="/build/PlayLists"><button class="moreplay">Más playlists</button></a></div>
+        <div class="buttonplay"><a href="/#/playlists"><button class="moreplay">Más playlists</button></a></div>
       </section>
     </body >
 
