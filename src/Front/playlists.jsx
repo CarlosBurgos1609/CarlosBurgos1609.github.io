@@ -104,7 +104,7 @@ function PlayLists() {
           <h1><img src={youtubemusic} alt="youtubemusic-logo" />Play Lists<img src={youtubemusic} alt="youtubemusic-logo" /></h1>
           <div class="wrapper">
             <div class="perfil">
-            <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target='_blank'><img src={youtube} alt="perfil" /></a>
+            <a href="https://www.youtube.com/@solracb/playlists"target='_blank'><img src={youtube} alt="perfil" /></a>
             </div>
             <div class="slider-container">
               <div class="slider-item">
