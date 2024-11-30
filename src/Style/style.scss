@@ -557,7 +557,72 @@ body {
 
 
     }
+    & .languages{
+        border: 1px solid #ccc;
+        margin: 8px;
+        border-radius: 7px;
+        flex-wrap: wrap;
 
+
+        & h1 {
+            @include m.center;
+            justify-content: center;
+            color: white;
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+            border-radius: 7px;
+            background: linear-gradient(90deg,
+                    rgb(76, 128, 223)0%,
+                    #FFFFFF 100%,
+
+                );
+
+            & img {
+                width: 40px;
+                height: auto;
+            }
+
+        }
+
+        $slider-width: 98%;
+        $iframe-height: 200px;
+
+        .wrapper {
+            width: $slider-width;
+            margin: auto;
+            text-align: center;        
+
+            .slider-container {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 10px;
+                padding-bottom: 20px;
+                scrollbar-width: none;
+                border-radius: 7px;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .slider-item {
+                    flex: 0 0 auto; 
+                    width: 100%;
+                    max-width: 200px;
+                    height: $iframe-height; // Altura fija
+                    scroll-snap-align: start; // Cada elemento se ajusta al inicio del scroll
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        border-radius: 7px;
+                    }
+                }
+            }
+        }
+    }
     //container de pagina de error 
     & .default {
         background:$light;
