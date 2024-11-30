@@ -108,19 +108,28 @@ function PlayLists() {
             </div>
             <div class="slider-container">
               <div class="slider-item">
+              {/* rock en ingles */}
               <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0oUa5yP5FcpVrnXm&amp;list=PLv8lOsaMAfyYxhZf_vPxs7nR-JP6UIL3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               <div class="slider-item">
+                {/* Rock en Español */}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=AYUbSj2qw0xZlkJv&amp;list=PLv8lOsaMAfyYnO8uy1vPbiklGUuUuhFPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+                {/* Trap Argentino */}
               <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=hm4WD4Cpnf3c8Ce0&amp;list=PLv8lOsaMAfya4nrCEKg9FLD_HM-96AP-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               <div class="slider-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=AXrp4LsgvlY-cHy0&amp;list=PLv8lOsaMAfyYm8v8kQ7w_O-NJoiKQ365h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              <div class="slider-item">
+                {/* Salsa */}
               <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=10NvCONmcUEtNdl_&amp;list=PLv8lOsaMAfyYkyf5QnXUoBC_JO-DwycvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               <div class="slider-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=_LvIH3BP_lEsc_2x&amp;list=PLv8lOsaMAfyZh5FBj6ggszF5lYVJEo4Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                {/* Cumbia */}
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=AXrp4LsgvlY-cHy0&amp;list=PLv8lOsaMAfyYm8v8kQ7w_O-NJoiKQ365h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+                {/* Anime */}
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=_LvIH3BP_lEsc_2x&amp;list=PLv8lOsaMAfyZh5FBj6ggszF5lYVJEo4Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
           </div>
