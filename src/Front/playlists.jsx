@@ -1,6 +1,8 @@
 import './../Style/style.scss';
 import Mylogo from './../img/Mylogo.png'
 import spotify from './../img/spotify.png'
+import youtube from './../img/youtube.png'
+import youtubemusic from './../img/youtube-music.png'
 import perfil from './../img/perfil.png'
 
 
@@ -93,6 +95,33 @@ function PlayLists() {
               <iframe  src="https://open.spotify.com/embed/playlist/4Hs6UxVqxNgypRkKxaYP6c?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
 
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="containers">
+        <section class="playlist">
+          <h1><img src={youtubemusic} alt="youtubemusic-logo" />Play Lists<img src={youtubemusic} alt="youtubemusic-logo" /></h1>
+          <div class="wrapper">
+            <div class="perfil">
+            <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target='_blank'><img src={youtube} alt="perfil" /></a>
+            </div>
+            <div class="slider-container">
+              <div class="slider-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0oUa5yP5FcpVrnXm&amp;list=PLv8lOsaMAfyYxhZf_vPxs7nR-JP6UIL3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=hm4WD4Cpnf3c8Ce0&amp;list=PLv8lOsaMAfya4nrCEKg9FLD_HM-96AP-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=AXrp4LsgvlY-cHy0&amp;list=PLv8lOsaMAfyYm8v8kQ7w_O-NJoiKQ365h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=10NvCONmcUEtNdl_&amp;list=PLv8lOsaMAfyYkyf5QnXUoBC_JO-DwycvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="slider-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=_LvIH3BP_lEsc_2x&amp;list=PLv8lOsaMAfyZh5FBj6ggszF5lYVJEo4Gj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                </div>
             </div>
           </div>
         </section>
