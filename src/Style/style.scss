@@ -33,6 +33,9 @@ $color-light: #000;
     border-radius: 9px;
     position: fixed;
     margin-right: 0;
+    // filter: drop-shadow(
+    //                 0 0 5px rgba(0, 0, 0, .8)
+    //             );
 
 
     & .logo img {
@@ -322,6 +325,7 @@ body {
         margin-left: 50px;
         margin-right: 50px;
         display: block;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     //containers de home
@@ -352,6 +356,8 @@ body {
 
             & .logo {
                 @include m.center;
+                
+                
             }
 
             & .text {
@@ -403,6 +409,9 @@ body {
                     float: left;
                     top: 50%;
                     right: 50%;
+                    filter: drop-shadow(
+                    0 0 10px rgba(0, 0, 0, .8)
+                );
                 }
                 img:hover {
                     transform: scale(0.9);
@@ -569,7 +578,7 @@ body {
             justify-content: center;
             color: white;
             width: 100%;
-            height: 50px;
+            height: auto;
             font-size: 30px;
             border-radius: 7px;
             background: linear-gradient(90deg,
