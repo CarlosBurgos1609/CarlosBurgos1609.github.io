@@ -83,6 +83,78 @@ function languages() {
             </div>
           </div>
         </section>
+        <section class="languages">
+          <h1>
+            <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="50px" />
+            </picture>Desarrollo Movil, Juegos y Bases de Datos<picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="50px" /></picture>
+          </h1>
+          <div class="wrapper">
+            <div class="slider-container">
+              <div class="slider-item">
+                {/* Android */}
+                <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Flutter */}
+                <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Dart */}
+                <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* React native */}
+                <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Unity */}
+                <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* MongoDb */}
+                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* MySQL */}
+                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Postgrest */}
+                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="languages">
+          <h1>
+            <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="50px" />
+            </picture>Software y Otros<picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="50px" /></picture>
+          </h1>
+          <div class="wrapper">
+            <div class="slider-container">
+              <div class="slider-item">
+                {/* Matlab */}
+                <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Postman */}
+                <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* linux */}
+                <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* git */}
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+              </div>
+              <div class="slider-item">
+                {/* Arduino */}
+                <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </body>
   );

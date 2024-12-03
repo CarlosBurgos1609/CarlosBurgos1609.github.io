@@ -355,9 +355,7 @@ body {
             width: 100%;
 
             & .logo {
-                @include m.center;
-                
-                
+                @include m.center;               
             }
 
             & .text {
@@ -409,9 +407,9 @@ body {
                     float: left;
                     top: 50%;
                     right: 50%;
-                    filter: drop-shadow(
-                    0 0 10px rgba(0, 0, 0, .8)
-                );
+                //     filter: drop-shadow(
+                //     0 0 10px rgba(0, 0, 0, .8)
+                // );
                 }
                 img:hover {
                     transform: scale(0.9);
@@ -621,13 +619,14 @@ body {
                     width: 100%;
                     max-width: 200px;
                     height: $iframe-height; // Altura fija
-                    scroll-snap-align: start; // Cada elemento se ajusta al inicio del scroll
+                    scroll-snap-align: start;
+                    border-radius: 7px; // Cada elemento se ajusta al inicio del scroll
 
                     img {
                         width: 100%;
                         height: 100%;
                         border: none;
-                        border-radius: 7px;
+                        border-radius: 9px;
                     }
                 }
             }
@@ -685,6 +684,7 @@ footer {
     border-radius: 7px;
     text-align: center;
     background: $light;
+    transition: fill 0.25s ease;
 
     & h3 {
         border-radius: 7px;
