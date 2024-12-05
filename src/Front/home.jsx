@@ -7,9 +7,6 @@ import spotify from './../img/spotify.png'
 function Home() {
   return (
     <body>
-      <div class="part">
-        <p>   cab</p>
-      </div>
       <section class="containers container1">
         <h1>Logo y Definción</h1>
         <div class="log">

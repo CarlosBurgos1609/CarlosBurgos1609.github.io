@@ -5,12 +5,8 @@ import spotify from './../img/spotify.png'
 
 
 function Certificates() {
-    return (<div>
-        <div class="part">
-        <p>   cab</p>
-      </div>
-        <body>
-      
+  return (
+    <body>
       <section class="containers container1">
         <h1>Logo y Definción</h1>
         <div class="log">
@@ -27,7 +23,6 @@ function Certificates() {
         </div>
       </section>
     </body >
-    </div>
-    );
+  );
 }
 export default Certificates;

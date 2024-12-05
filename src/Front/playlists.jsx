@@ -10,11 +10,7 @@ import perfil from './../img/perfil.png'
 function PlayLists() {
   return (
     <body>
-      <div class="part">
-        <p>cab</p>
-      </div>
-
-      <section class="containers">
+        <section class="containers">
         <section class="playlist">
           <h1><img src={spotify} alt="spotify-logo" />Play Lists<img src={spotify} alt="spotify-logo" /></h1>
           <div class="wrapper">

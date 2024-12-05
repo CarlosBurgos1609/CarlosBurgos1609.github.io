@@ -6,9 +6,6 @@ import cpp from './../img/cpp.png'
 function languages() {
   return (
     <body>
-      <div class="part">
-        <p>cab</p>
-      </div>
       <section class="containers">
         <section class="languages">
           <h1>

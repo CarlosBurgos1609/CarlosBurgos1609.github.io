@@ -13,7 +13,8 @@ const Layout = () => {
     //     theme === "light" ? setTheme("dark") : setTheme("light");
     // const icon = theme === "light" ? sun : moon;
 
-    return <div> <header class="header" >
+    return <div> 
+        <header class="header" >
         <div class="menu container ">
             <div class="logo">
                 <a href="index.html">
@@ -45,6 +46,9 @@ const Layout = () => {
             </nav>
         </div>
     </header>
+    <div class="part">
+      <p>cab</p>
+    </div>
         <Outlet />
 
         <footer>

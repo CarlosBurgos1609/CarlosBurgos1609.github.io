@@ -7,23 +7,20 @@ import bici from './../img/bici.png'
 
 
 function Aplicactions() {
-  return (<div>
-    <div class="part">
-      <p>   cab</p>
-    </div>
-    <body>
-
-      <section class="containers">
-        <section class="aplications">
-          <h1>Aplicaciones Realizadas</h1>
-          <div class="log">
-            <a href="https://bici-parqueadero.up.railway.app/"><img src={bici} alt="" /></a>
-            <img src={inProcess} alt="InProcess" />
+  return (
+    <div>
+      <body>
+        <section class="containers">
+          <section class="aplications">
+            <h1>Aplicaciones Realizadas</h1>
+            <div class="log">
+              <a href="https://bici-parqueadero.up.railway.app/" target='_blank'><img src={bici} alt="" /></a>
+              <img src={inProcess} alt="InProcess" />
             </div>
+          </section>
         </section>
-      </section>
-    </body >
-  </div>
+      </body >
+    </div>
   );
 }
 export default Aplicactions;

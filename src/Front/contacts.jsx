@@ -5,12 +5,8 @@ import spotify from './../img/spotify.png'
 
 
 function Contacts() {
-    return (<div>
-        <div class="part">
-        <p>   cab</p>
-      </div>
-        <body>
-      
+  return (
+    <body>
       <section class="containers container1">
         <h1>Logo y Definción</h1>
         <div class="log">
@@ -23,11 +19,9 @@ function Contacts() {
               Jaramillo, donde cada elemento visual representa una parte esencial de quién soy.
             </p>
           </div>
-
         </div>
       </section>
     </body >
-    </div>
-    );
+  );
 }
 export default Contacts;

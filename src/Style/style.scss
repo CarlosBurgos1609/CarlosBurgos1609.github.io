@@ -301,7 +301,7 @@ body {
 
 .part {
     margin-left: 5px;
-    padding-top: 70px;
+    padding-top: 80px;
     color: white;
 
 }
@@ -644,6 +644,7 @@ body {
             font-family: 'Times New Roman', Times, serif;
             background: $light;
             height: 40px;
+            text-align: center;
             width: 100%;
         }
         & .log{
@@ -652,10 +653,24 @@ body {
             @include m.center;
             flex-wrap: wrap;
             & img{
+                justify-content: space-between;
+                margin: 20px;
+                margin-right: 40px;
                 align-items: center;
                 width: 190px;
             }
             
+        }
+        @media(max-width:999px) {
+            & h1{
+                height: 50px;
+            }
+            & .log{
+                & img{
+                    width: 80px;
+                }
+            }
+
         }
     }
     //container de pagina de error 
