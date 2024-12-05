@@ -632,6 +632,32 @@ body {
             }
         }
     }
+    & .aplications{
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        
+        & h1{
+            color: #FFFFFF;
+            border-radius: 7px;
+            @include m.center;
+            font-family: 'Times New Roman', Times, serif;
+            background: $light;
+            height: 40px;
+            width: 100%;
+        }
+        & .log{
+            display: flex;
+            justify-content: space-between;
+            @include m.center;
+            flex-wrap: wrap;
+            & img{
+                align-items: center;
+                width: 190px;
+            }
+            
+        }
+    }
     //container de pagina de error 
     & .default {
         background:$light;
