@@ -32,9 +32,9 @@ const Layout = () => {
                     <li><Link to="/languages">Lenguajes</Link></li>
                     <li><Link to="/aplicactions">Aplicaciones</Link></li>
                     <li><Link to="/certificates">Certificados</Link></li>
-                    <li><Link to="/works">Trabajos</Link></li>
+                    {/* <li><Link to="/works">Trabajos</Link></li> */}
                     <li><Link to="/contacts">Contactos</Link></li>
-                    <li><Link to="/socialNetworks">Redes sociales</Link></li>
+                    {/* <li><Link to="/socialNetworks">Redes sociales</Link></li> */}
                     <li><Link to="/playlists">PlayLists</Link></li>
                     {/* <li>
                         <img src={icon} alt="dark" onClick={switchTheme} />
