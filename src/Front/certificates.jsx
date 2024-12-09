@@ -1,26 +1,23 @@
 import './../Style/style.scss';
 import Mylogo from './../img/Mylogo.png'
-import spotify from './../img/spotify.png'
+import ratatype from './../img/ratatype.png'
+import ratatypecr from './../img/certificates/ratatypecr.png'
 // import './Style/style.scss';
 
 
 function Certificates() {
   return (
     <body>
-      <section class="containers container1">
-        <h1>Logo y Definción</h1>
-        <div class="log">
-          <div class="logo"><img src={Mylogo} alt="logo" /></div>
-          <div class="text">
-            <p>Mi logo representa la unión de diferentes facetas de mi personalidad. El círculo azul simboliza mi integridad
-              y la búsqueda de un equilibrio en mi vida. Los triángulos, con su forma sólida y ascendente, representan mis
-              ambiciones y mi constante crecimiento. El semicírculo, que se abre hacia el futuro, simboliza mi deseo de
-              explorar nuevas oportunidades. La combinación de estas formas refleja mi nombre, Carlos Alexander Burgos
-              Jaramillo, donde cada elemento visual representa una parte esencial de quién soy.
-            </p>
-          </div>
-
+      <section class="containers">
+        <section class="certificates">
+        <div class="logo">
+          <a href="https://www.ratatype.es/u5891306/certificate/es/"target='_blank'><img src={ratatype} alt="" /></a>
+          <h1>Ratatype</h1>
         </div>
+        <div class="ratatype">
+          <a href="https://www.ratatype.es/u5891306/certificate/es/" target='_blank'></a><img src={ratatypecr} alt="Ratatype" />
+        </div>
+        </section>
       </section>
     </body >
   );

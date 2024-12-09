@@ -50,6 +50,7 @@ $color-light: #000;
             transform: scale(0.9);
         }
     }
+
     img:hover {
         transform: scale(0.9);
 
@@ -334,9 +335,10 @@ body {
         margin-top: 8px;
         border-radius: 7px;
         flex-wrap: wrap;
+
         img:hover {
             transform: scale(0.9);
-    
+
         }
 
         & h1 {
@@ -355,7 +357,7 @@ body {
             width: 100%;
 
             & .logo {
-                @include m.center;               
+                @include m.center;
             }
 
             & .text {
@@ -407,14 +409,15 @@ body {
                     float: left;
                     top: 50%;
                     right: 50%;
-                //     filter: drop-shadow(
-                //     0 0 10px rgba(0, 0, 0, .8)
-                // );
+                    //     filter: drop-shadow(
+                    //     0 0 10px rgba(0, 0, 0, .8)
+                    // );
                 }
+
                 img:hover {
                     transform: scale(0.9);
-            
-                }   
+
+                }
             }
 
             & .playlists {
@@ -503,7 +506,8 @@ body {
             width: $slider-width;
             margin: auto;
             text-align: center;
-            & .perfil{
+
+            & .perfil {
                 // display: flex;
                 overflow-x: auto;
                 height: 100%;
@@ -512,22 +516,23 @@ body {
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                img{
+
+                img {
                     margin: 2px;
                     scroll-snap-align: start;
-                   justify-items: center;
+                    justify-items: center;
                     border-radius: 7px;
-                    flex: 0 0 auto; 
+                    flex: 0 0 auto;
                     border: none;
                     width: 100%;
                     height: auto;
                     border: none;
-    
+
                 }
             }
 
-            
-            
+
+
 
             .slider-container {
                 display: flex;
@@ -543,7 +548,7 @@ body {
                 }
 
                 .slider-item {
-                    flex: 0 0 auto; 
+                    flex: 0 0 auto;
                     width: 100%;
                     max-width: 500px; // Ajusta si quieres limitar el tamaño
                     height: $iframe-height; // Altura fija
@@ -564,7 +569,8 @@ body {
 
 
     }
-    & .languages{
+
+    & .languages {
         border: 1px solid #ccc;
         margin: 8px;
         border-radius: 7px;
@@ -599,7 +605,7 @@ body {
         .wrapper {
             width: $slider-width;
             margin: auto;
-            text-align: center;        
+            text-align: center;
 
             .slider-container {
                 display: flex;
@@ -615,7 +621,7 @@ body {
                 }
 
                 .slider-item {
-                    flex: 0 0 auto; 
+                    flex: 0 0 auto;
                     width: 100%;
                     max-width: 250px;
                     height: $iframe-height; // Altura fija
@@ -632,12 +638,13 @@ body {
             }
         }
     }
-    & .aplications{
+
+    & .aplications {
         justify-content: center;
         width: 100%;
         padding: 5px;
-        
-        & h1{
+
+        & h1 {
             color: #FFFFFF;
             border-radius: 7px;
             @include m.center;
@@ -647,35 +654,72 @@ body {
             text-align: center;
             width: 100%;
         }
-        & .log{
+
+        & .log {
             display: flex;
             justify-content: space-between;
             @include m.center;
             flex-wrap: wrap;
-            & img{
+
+            & img {
                 justify-content: space-between;
                 margin: 20px;
                 margin-right: 40px;
                 align-items: center;
                 width: 190px;
             }
-            
+
         }
+
         @media(max-width:999px) {
-            & h1{
+            & h1 {
                 height: 50px;
             }
-            & .log{
-                & img{
+
+            & .log {
+                & img {
                     width: 80px;
                 }
             }
 
         }
     }
+
+    & .certificates {
+        & .logo {
+            display: flex;
+            margin: 0;
+            @include m.center;
+            & img {
+                width: 40px;
+                border-radius: 7px;
+            }
+            h1 {
+                color: #FFFFFF;
+                border-radius: 7px;
+                @include m.center;
+                font-family: 'Times New Roman', Times, serif;
+                background: $light;
+                height: 40px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        & .ratatype{
+            flex: 0 0 auto;
+            @include m.center;
+            & img{
+                margin: 0;
+                width: 100%;
+                border-radius: 10px;
+
+            }
+        }
+    }
+
     //container de pagina de error 
     & .default {
-        background:$light;
+        background: $light;
         width: 100%;
         display: grid;
         border-radius: 8px;
@@ -700,11 +744,13 @@ body {
             display: flex;
             border-radius: 8px;
             position: relative;
-            & .logo{
+
+            & .logo {
                 @include m.center;
                 height: 1px;
             }
-            &  .text{
+
+            & .text {
                 font-family: 'Times New Roman', Times, serif;
                 color: #FFFFFF;
                 background: $dark;

@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.24562a80.css",
-    "main.js": "/build/static/js/main.877c2f9b.js",
+    "main.css": "/build/static/css/main.47c4468f.css",
+    "main.js": "/build/static/js/main.9c5d2097.js",
     "static/js/453.daebc7d9.chunk.js": "/build/static/js/453.daebc7d9.chunk.js",
+    "static/media/ratatypecr.png": "/build/static/media/ratatypecr.9726606d86c2b3c8bb22.png",
     "static/media/perfil.png": "/build/static/media/perfil.65d21ed35ad1c1438a85.png",
     "static/media/youtube.png": "/build/static/media/youtube.29941d512ddc63cc3be9.png",
     "static/media/youtube-music.png": "/build/static/media/youtube-music.79db4bdad9d9dd761ebf.png",
@@ -12,13 +13,14 @@
     "static/media/cpp.png": "/build/static/media/cpp.b659340dced45d615d3e.png",
     "static/media/menu.png": "/build/static/media/menu.5eca8aba87e4457cb6e8.png",
     "static/media/bici.png": "/build/static/media/bici.850176183ecba4a8863a.png",
+    "static/media/ratatype.png": "/build/static/media/ratatype.6370dc749326a99f66ef.png",
     "index.html": "/build/index.html",
-    "main.24562a80.css.map": "/build/static/css/main.24562a80.css.map",
-    "main.877c2f9b.js.map": "/build/static/js/main.877c2f9b.js.map",
+    "main.47c4468f.css.map": "/build/static/css/main.47c4468f.css.map",
+    "main.9c5d2097.js.map": "/build/static/js/main.9c5d2097.js.map",
     "453.daebc7d9.chunk.js.map": "/build/static/js/453.daebc7d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24562a80.css",
-    "static/js/main.877c2f9b.js"
+    "static/css/main.47c4468f.css",
+    "static/js/main.9c5d2097.js"
   ]
 }
