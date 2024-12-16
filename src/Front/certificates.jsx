@@ -1,7 +1,11 @@
 import './../Style/style.scss';
 import ratatype from './../img/logos/ratatype.png'
 import ratatypecr from './../img/certificates/ratatypecr.png'
-import sena from './../img/certificates/sena.png'
+import senacr from './../img/certificates/sena.png'
+import scrumcr from './../img/certificates/scrum.png'
+import sena from './../img/logos/sena.png'
+import scrum from './../img/logos/scrum.png'
+
 
 
 function Certificates() {
@@ -23,16 +27,16 @@ function Certificates() {
           <h1>SENA</h1>
         </div>
         <div class="certificate">
-          <a href="https://www.ratatype.es/u5891306/certificate/es/" target='_blank'></a><img src={ratatypecr} alt="Ratatype" />
+          <a href="http://senasofiaplus.edu.co/sofia-public/" target='_blank'></a><img src={senacr} alt="Ratatype" />
         </div>
         </section>
         <section class="certificates">
         <div class="logo">
-          <a href="#"target='_blank'><img src={sena} alt="" /></a>
+          <a href="#"target='_blank'><img src={scrum} alt="" /></a>
           <h1>ScrumStudy</h1>
         </div>
         <div class="certificate">
-          <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=972822" target='_blank'></a><img src={ratatypecr} alt="Ratatype" />
+          <a href="https://www.scrumstudy.com/" target='_blank'></a><img src={scrumcr} alt="Ratatype" />
         </div>
         </section>
       </section>
