@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import Mylogo from './img/Mylogo.png'
-import menu from './img/menu.png'
 import moon from './img/oscuro.png'
 import sun from './img/claro.png'
 // import styles from './Style/style.scss'

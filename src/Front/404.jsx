@@ -1,5 +1,5 @@
 import './../Style/style.scss';
-import Mylogo from './../img/Mylogo.png'
+import Mylogo from './../img/logos/Mylogo.png'
 
 function Error() {
     return (<div>

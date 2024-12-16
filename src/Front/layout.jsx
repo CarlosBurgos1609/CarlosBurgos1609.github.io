@@ -1,9 +1,6 @@
-import { UseState } from 'react';
+// import { UseState } from 'react';
 import { Link, Outlet } from "react-router-dom";
-// import moon from './../img/oscuro.png'
-// import sun from './../img/claro.png'
-import './../Style/style.scss'
-import Mylogo from './../img/Mylogo.png'
+import Mylogo from './../img/logos/Mylogo.png'
 import menu from './../img/menu.png'
 
 const Layout = () => {

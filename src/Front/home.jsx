@@ -1,7 +1,6 @@
 import './../Style/style.scss';
-import Mylogo from './../img/Mylogo.png'
-import spotify from './../img/spotify.png'
-// import './Style/style.scss';
+import Mylogo from './../img/logos/Mylogo.png'
+import spotify from './../img/logos/spotify.png'
 
 
 function Home() {

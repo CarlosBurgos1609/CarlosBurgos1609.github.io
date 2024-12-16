@@ -1,8 +1,6 @@
 import './../Style/style.scss';
-import Mylogo from './../img/Mylogo.png'
-import spotify from './../img/spotify.png'
 import inProcess from './../img/inProcess.png'
-import bici from './../img/bici.png'
+import bici from './../img/logos/bici.png'
 // import './Style/style.scss';
 
 

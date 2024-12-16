@@ -1,5 +1,4 @@
 import './../Style/style.scss';
-import cpp from './../img/cpp.png'
 // import './Style/style.scss';
 
 

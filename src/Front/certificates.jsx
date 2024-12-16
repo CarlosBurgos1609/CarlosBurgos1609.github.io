@@ -1,9 +1,7 @@
 import './../Style/style.scss';
-import Mylogo from './../img/Mylogo.png'
-import ratatype from './../img/ratatype.png'
+import ratatype from './../img/logos/ratatype.png'
 import ratatypecr from './../img/certificates/ratatypecr.png'
 import sena from './../img/certificates/sena.png'
-// import './Style/style.scss';
 
 
 function Certificates() {

@@ -1,8 +1,8 @@
 import './../Style/style.scss';
-import Mylogo from './../img/Mylogo.png'
-import spotify from './../img/spotify.png'
-import youtube from './../img/youtube.png'
-import youtubemusic from './../img/youtube-music.png'
+import Mylogo from './../img/logos/Mylogo.png'
+import spotify from './../img/logos/spotify.png'
+import youtube from './../img/logos/youtube.png'
+import youtubemusic from './../img/logos/youtube-music.png'
 import perfil from './../img/perfil.png'
 
 
