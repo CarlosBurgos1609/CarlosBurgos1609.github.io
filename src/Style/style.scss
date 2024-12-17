@@ -58,6 +58,7 @@ $color-light: #000;
 
     & .nav-list {
         list-style: circle;
+        margin: 10px;
 
         & li {
             // display: inline-block;
@@ -71,7 +72,7 @@ $color-light: #000;
         }
 
         & li a {
-            color: #460e5c;
+            color: #3d0553;
             padding: 2px;
             border-radius: 7px;
             display: block;
@@ -352,6 +353,8 @@ body {
                     rgb(76, 128, 223)0%,
                     #FFFFFF 100%,
                 );
+            width: 100%;
+            height: 50px;
         }
 
         & .log {
