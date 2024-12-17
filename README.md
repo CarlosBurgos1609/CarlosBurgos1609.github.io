@@ -29,8 +29,8 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
 	<a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube"/></a>
 	<a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
+	<a href="https://discord.gg/yZzMFqZp"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
+	<a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp"/></a>
 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer"/></a>
 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat"/></a>

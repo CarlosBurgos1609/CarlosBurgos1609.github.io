@@ -692,11 +692,13 @@ body {
             display: flex;
             margin: 0;
             @include m.center;
+
             & img {
                 height: 40px;
                 width: auto;
                 border-radius: 7px;
             }
+
             h1 {
                 color: #FFFFFF;
                 border-radius: 7px;
@@ -708,10 +710,12 @@ body {
                 width: 100%;
             }
         }
-        & .certificate{
+
+        & .certificate {
             flex: 0 0 auto;
             @include m.center;
-            & img{
+
+            & img {
                 margin: 0;
                 width: 100%;
                 border-radius: 10px;
@@ -764,20 +768,83 @@ body {
 
     }
 
-    & .contact{
+    & .contact {
         padding-top: 5px;
         @include m.center;
         display: inline;
-        & h1{
+
+        & h1 {
             display: flex;
+            @include m.center;
             flex-wrap: wrap;
             text-align: center;
             justify-content: center;
-            width: 90%;
+            width: 100%;
+            font-size: 30px;
+            height: 50px;
             margin: 4px;
             background: $light;
             border-radius: 8px;
-            color: #4b697c;
+            color: #ffffff;
+        }
+
+        & h2 {
+            display: flex;
+            @include m.center;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            margin: 4px;
+            font-size: 20px;
+            background: linear-gradient(90deg, rgb(150, 170, 207)0%, #7695d8 100%, );
+            border-radius: 8px;
+            color: #e5f3f2;
+
+            & img {
+                height: 30px;
+                width: auto;
+                @include m.center;
+                justify-content: center;
+            }
+        }
+    }
+
+    & .social {
+        display: inline;
+
+        h1 {
+            display: flex;
+            @include m.center;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 30px;
+            height: 50px;
+            margin: 4px;
+            background: $light;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+
+        
+        & img {
+            // display: flex;
+            flex-wrap: wrap;
+            height: 50px;
+            width: 170px;
+            margin: 5px;
+        }
+
+        @media(max-width:700px) {
+            img {
+                height: 20px;
+                flex-wrap: wrap;
+                width: 46%;
+                height: auto;
+            }
         }
 
     }
