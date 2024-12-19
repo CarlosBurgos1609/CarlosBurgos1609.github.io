@@ -18,6 +18,11 @@ function DarkMode (){
       <img src={icon} alt="icono" />
       <div>
         <h1>Dark mode</h1>
+        <h1>Dark mode</h1>
+        <h1>Dark mode</h1>
+        <h1>Dark mode</h1>
+        <h1>Dark mode</h1>
+        <h1>Dark mode</h1>
         <h2>con <b>React</b> y <b>sass</b></h2>
       </div>
       <span>
