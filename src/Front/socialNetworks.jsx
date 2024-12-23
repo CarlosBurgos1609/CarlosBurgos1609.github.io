@@ -12,9 +12,7 @@ function SocialNetworks() {
           <div class="logo"><img src={Mylogo} alt="logo" /></div>
           <div class="text">
             <p>Mi logo representa la unión de diferentes facetas de mi personalidad. El círculo azul simboliza mi integridad
-            </p>
-            
-            
+            </p>           
           </div>
 
         </div>
