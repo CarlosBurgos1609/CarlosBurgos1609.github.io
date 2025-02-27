@@ -1,4 +1,4 @@
-<link rel="icon" href="/build/favicon.ico"/>
+
 <!--Header -->
 [![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
 <div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>
