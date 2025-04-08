@@ -52,12 +52,12 @@ const Layout = () => {
             <div>
                 <h3>Redes sociales</h3>
                 <div class="socialn">
-                    <a href="https://github.com/CarlosBurgos1609" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub" /></a>
-                    <a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn" /></a>
-                    <a href="https://www.facebook.com/profile.php?id=61569174632410" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook" /></a>
-                    <a href="https://www.instagram.com/carlitos_burgosj/" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram" /></a>
-                    <a href="https://www.youtube.com/@solracb/playlists"target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube" /></a>
-                    <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify" /></a>
+                    <a href="https://github.com/CarlosBurgos1609" target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//github.png" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61569174632410" target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//facebook-new.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/carlitos_burgosj/" target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//instagram.png" alt="Instagram" /></a>
+                    <a href="https://www.youtube.com/@solracb/playlists"target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//youtube.png" alt="Youtube" /></a>
+                    <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target="_blank"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//spotify.png" alt="Spotify" /></a>
                 </div>
             </div>
         </footer>
