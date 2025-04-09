@@ -12,7 +12,7 @@ function Contacts() {
             <h2>Correo electrónico: caburgos.0325@unicesmag.edu.co</h2>
           </div>
           <div>
-            <h2><a href="https://discord.gg/yZzMFqZp" target='_blank'><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord" /></a>Discord<a href="https://discord.gg/yZzMFqZp" target='_blank'><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord" /></a></h2>
+            <h2><a href="https://discord.gg/yZzMFqZp" target='_blank'><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//discord.png" alt="Discord" /></a>Discord<a href="https://discord.gg/yZzMFqZp" target='_blank'><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//discord.png" alt="Discord" /></a></h2>
           </div>
         </section>
       </section>
