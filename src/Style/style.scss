@@ -33,6 +33,7 @@ $color-light: #000;
     border-radius: 9px;
     position: fixed;
     margin-right: 0;
+    z-index: 1000;
     // filter: drop-shadow(
     //                 0 0 5px rgba(0, 0, 0, .8)
     //             );
@@ -409,7 +410,7 @@ body {
 
             & .img-spotify {
                 margin: 0 auto;
-                
+
                 & img {
                     float: left;
                     top: 50%;
@@ -832,7 +833,7 @@ body {
             color: #ffffff;
         }
 
-        
+
         & img {
             // display: flex;
             flex-wrap: wrap;
