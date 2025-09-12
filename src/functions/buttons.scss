@@ -1,0 +1,21 @@
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.slider-btn {
+  background: #4c80df;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.slider-btn:hover {
+  background: #3056a0;
+}

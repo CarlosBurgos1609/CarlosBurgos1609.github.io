@@ -4,10 +4,13 @@ import spotify from './../img/logos/spotify.png'
 import youtube from './../img/logos/youtube.png'
 import youtubemusic from './../img/logos/youtube-music.png'
 import perfil from './../img/perfil.png'
-
-
+import React, { useRef } from 'react';
+import SliderButtons from '../functions/buttons';
+import '../functions/buttons.scss';
 
 function PlayLists() {
+  const sliderRef = useRef(null);
+  const sliderYoutubeRef = useRef(null);
   return (
     <body>
         <section class="containers">
@@ -17,7 +20,8 @@ function PlayLists() {
             <div class="perfil">
             <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"target='_blank'><img src={perfil} alt="perfil" /></a>
             </div>
-            <div class="slider-container">
+            <SliderButtons sliderRef={sliderRef} />
+            <div class="slider-container" ref={sliderRef}>
               <div class="slider-item">
                 {/* rock 80 y 90 */}
                 <iframe src="https://open.spotify.com/embed/playlist/6KERsvpYzzhISMRnJz77xh?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -90,7 +94,6 @@ function PlayLists() {
               {/* Regae */}
               <iframe  src="https://open.spotify.com/embed/playlist/4Hs6UxVqxNgypRkKxaYP6c?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
-
             </div>
           </div>
         </section>
@@ -102,7 +105,8 @@ function PlayLists() {
             <div class="perfil">
             <a href="https://www.youtube.com/@solracb/playlists"target='_blank'><img src={youtube} alt="perfil" /></a>
             </div>
-            <div class="slider-container">
+            <SliderButtons sliderRef={sliderYoutubeRef} />
+            <div class="slider-container" ref={sliderYoutubeRef}>
               <div class="slider-item">
               {/* rock en ingles */}
               <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0oUa5yP5FcpVrnXm&amp;list=PLv8lOsaMAfyYxhZf_vPxs7nR-JP6UIL3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
