@@ -1,11 +1,13 @@
 import './../Style/style.scss';
 import Mylogo from './../img/logos/Mylogo.png'
 import spotify from './../img/logos/spotify.png'
+import PlayLists from './playlists';
 
 
 function Home() {
   return (
     <body>
+      <div className='flex-column'>
       <section class="containers container1">
         <h1>Logo y Definción</h1>
         <div class="log flex-row-responsive">
@@ -76,6 +78,10 @@ function Home() {
           </div>
         </section>
       </section>
+          <div>
+            <PlayLists />
+          </div>
+      </div>
     </body >
   );
 }
