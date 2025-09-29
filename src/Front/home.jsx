@@ -17,7 +17,7 @@ function Home() {
               y la búsqueda de un equilibrio en mi vida. Los triángulos, con su forma sólida y ascendente, representan mis
               ambiciones y mi constante crecimiento. El semicírculo, que se abre hacia el futuro, simboliza mi deseo de
               explorar nuevas oportunidades. La combinación de estas formas refleja mi nombre, Carlos Alexander Burgos
-              Jaramillo, donde cada elemento visual representa una parte esencial de quién soy.
+              Jaramillo, donde cada elemento visual representa una parte esencial de quién soy y seré.
             </p>
           </div>
         </div>
