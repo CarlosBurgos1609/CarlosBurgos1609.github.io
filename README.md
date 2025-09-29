@@ -94,16 +94,21 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 >[![Hip-Hop/Rap](https://img.shields.io/badge/Hip%20Hop%20/Rap-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7qOs3OWDkor8Wk3eBeXpHb)
 >[![Baladas](https://img.shields.io/badge/Baladas-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6ZDDxuQj8VQWAluDNjHp1U)
 >
-> 	
-> [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
+> <div align="center">
+>
 > [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 >
+> </div>
 >
-> <picture>
+> <div align="center">
+>
+> <picture > 
 >  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph-dark.svg">
 >  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
 >  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
 > </picture>
+> </div>
+
 
 <!---
 [![Spotify](https://readme-spotify.warengonzaga.com/api/spotify?&aling=center)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
