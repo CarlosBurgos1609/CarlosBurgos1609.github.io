@@ -119,7 +119,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 ---
 
-<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> </h2>
+< align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> 
 
 
 > <p align="center">
@@ -194,7 +194,9 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 >  </a>
 > </p>
 
+
 ---
+
 
 <!--
 [![My Skills](https://skillicons.dev/icons?i=azure,react,flutter,python,java,javascript,arduino,cs,css,sass,dart,discord,django,git,gmail,html,linkedin,matlab,mysql,nodejs,php,postgres,postman,powershell,unity,visualstudio,vscode,windows,linux&perline=20)]("")
