@@ -1,12 +1,14 @@
->[!IMPORTANT]
-><!--Header -->
->[![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
->_***<div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>***_
+> <!--Header -->
+>
+> [![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
+>
+> ***<div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>***
+
 <!--h3 align="center">
 I am a systems engineer from CESMAG University, I have knowledge of React, CSS, sass, C#, Html, python, java script, C++, flutter, I like to make web pages in my free time.</h3>-->
 
-
 ---
+
 <!--connect with me -->
 <!--
 <h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>
@@ -21,88 +23,87 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 <a href="https://instagram.com/anderson_mend53" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="anderson_mend53" height="60" width="50" /></a>
 </p>
 -->
-***<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>***
 
->[!WARNING]
-><p align="center">
+**_<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>_**
+
+
+> <p align="center">
 >  <a href="https://carlosburgos1609.github.io/build/"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//web.png" alt="Website"/></a>
->	<a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
->	<a href="https://github.com/CarlosBurgos1609"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
->	<a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
->	<a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook"/></a>
->	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
->	<a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube"/></a>
->	<a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify"/></a>
->	<a href="https://discord.gg/yZzMFqZp"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
->	<a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
->	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp"/></a>
->	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer"/></a>
->	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat"/></a>
->	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/x.png" alt="twitter"/></a>
+> 	<a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
+> 	<a href="https://github.com/CarlosBurgos1609"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
+> 	<a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+> 	<a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook"/></a>
+> 	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
+> 	<a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube"/></a>
+> 	<a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify"/></a>
+> 	<a href="https://discord.gg/yZzMFqZp"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
+> 	<a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
+> 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp"/></a>
+> 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer"/></a>
+> 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat"/></a>
+> 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/x.png" alt="twitter"/></a>
 > 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/pinterest.png" alt="pinterest"/></a>
 >  	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/reddit.png" alt="reddit"/></a>
 >  	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/skype.png" alt="skype"/></a>
 >   	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitch.png" alt="twitch"/></a>
-></p>
+> </p>
 
 ---
 
-***<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>***
+***_<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>_***
+
 <!--<img align="center" alt="OnePiece_Luffy" src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/anime/luffy.gif"/>-->
 
->[!NOTE]
+
 ><img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
 >
+> - 🔭 I’m currently studying
 >
->- 🔭 I’m currently studying
->  
->- 🌱 I’m currently learning sass, Java y React
->  
->- 👯 I’m looking to collaborate on Proyectos
->  
->- 💬 Ask me about Sql, Java, C#, JavaScript...
-  
-- 🎧 Fun fact: like the music.
+> - 🌱 I’m currently learning sass, Java y React
+>
+> - 👯 I’m looking to collaborate on Proyectos
+>
+> - 💬 Ask me about Sql, Java, C#, JavaScript...
+>
+>- 🎧 Fun fact: like the music.
 
 ---
-
-
 
 <!--<img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />-->
 
-***<h2 align="center">:headphones: My spotify playlists :headphones: </h2>***
 
->[!TIP]
-><div align="left">
+***<h2 align="center">🎧 My spotify playlists 🎧 </h2>***
+
+<!-- > <img width="250" align="right" alt="GIF" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" /> -->
+
+> <div align="center">
+> </div>
 >
-><img width="250" align="right" alt="GIF" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
->
->[![rock-español](https://img.shields.io/badge/Rock%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3GWu39s0U4TTdGv7MpzC5P) 
->[![Salsa](https://img.shields.io/badge/Salsa-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7ARdbqV0W6SQSYyJ0pH3ZY)
->[![Merengue](https://img.shields.io/badge/Merengue-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/10nfX6VXflrOquAKmA1bMz)
->[![Rock en ingles](https://img.shields.io/badge/Rock%20En%20Ingles-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/5P6n1BNwogBmLXZqIwlk3e) 
->[![Rock y poo 80 y 90](https://img.shields.io/badge/Rock%20and%20Pop%20Retro-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6KERsvpYzzhISMRnJz77xh)
->[![Pop](https://img.shields.io/badge/POP-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/73C5mk3LRQtxzZ2dTf22ic)
+> [![rock-español](https://img.shields.io/badge/Rock%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3GWu39s0U4TTdGv7MpzC5P)
+> [![Salsa](https://img.shields.io/badge/Salsa-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7ARdbqV0W6SQSYyJ0pH3ZY) 
+>[![Merengue](https://img.shields.io/badge/Merengue-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/10nfX6VXflrOquAKmA1bMz) 
+>[![Rock en ingles](https://img.shields.io/badge/Rock%20En%20Ingles-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/5P6n1BNwogBmLXZqIwlk3e)
+> [![Rock y poo 80 y 90](https://img.shields.io/badge/Rock%20and%20Pop%20Retro-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6KERsvpYzzhISMRnJz77xh) 
+>[![Pop](https://img.shields.io/badge/POP-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/73C5mk3LRQtxzZ2dTf22ic) 
 >[![Pop latino](https://img.shields.io/badge/POP%20Latino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6F2QF1tMHv6U9B8QMn1pbR)
 >[![Electrónica](https://img.shields.io/badge/Electrónica-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/55g6nZwjigkdi3jIeVXBo9)
->[![Pop en español](https://img.shields.io/badge/Pop%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/40BbhGPEcklGp49QrSlFfZ)
->[![Cumbia](https://img.shields.io/badge/Cumbia-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3wdr8eEILMkHJDXNu12Y2N)
->[![Trap Argentino](https://img.shields.io/badge/Trap%20Argentino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4lRMQOJAUwlnPN0u6vltCa)
->[![Bachata](https://img.shields.io/badge/Bachata-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/12WRhlSnurKbWGD22hftSB)
+>[![Pop en español](https://img.shields.io/badge/Pop%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/40BbhGPEcklGp49QrSlFfZ) 
+>[![Cumbia](https://img.shields.io/badge/Cumbia-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3wdr8eEILMkHJDXNu12Y2N) 
+>[![Trap Argentino](https://img.shields.io/badge/Trap%20Argentino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4lRMQOJAUwlnPN0u6vltCa) 
+>[![Bachata](https://img.shields.io/badge/Bachata-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/12WRhlSnurKbWGD22hftSB) 
 >[![Hip-Hop/Rap](https://img.shields.io/badge/Hip%20Hop%20/Rap-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7qOs3OWDkor8Wk3eBeXpHb)
 >[![Baladas](https://img.shields.io/badge/Baladas-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6ZDDxuQj8VQWAluDNjHp1U)
 >
-><div align="center">
->	
->[![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
+> <div align="center">
+> 	
+> [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 >
->
-></div>
-><picture>
+> </div>
+> <picture>
 >  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph-dark.svg">
 >  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
 >  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
-></picture>
+> </picture>
 
 <!---
 [![Spotify](https://readme-spotify.warengonzaga.com/api/spotify?&aling=center)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
@@ -110,12 +111,11 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 -->
 
-
 ---
 
-***<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px>  </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </h2>***
+**_<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </h2>_**
 
-> [!IMPORTANT]
+
 > <p align="center">
 >  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
 >    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="30" height="30" />
@@ -186,17 +186,17 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 >  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
 >    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="visual_studio_code" width="30" height="30" />
 >  </a>
-></p>
-
+> </p>
 
 ---
+
 <!--
 [![My Skills](https://skillicons.dev/icons?i=azure,react,flutter,python,java,javascript,arduino,cs,css,sass,dart,discord,django,git,gmail,html,linkedin,matlab,mysql,nodejs,php,postgres,postman,powershell,unity,visualstudio,vscode,windows,linux&perline=20)]("")
 -->
 <!--
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=carlosburgos1709&label=Profile%20views&color=0e75b6&style=flat" alt="carlosburgos1709" /> </p>
 -->
-<h2 align="center"><picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Statistics.gif?raw=true" width = 50px>  </picture>GitHub:</h2>
+<h2 align="center"><picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Statistics.gif?raw=true" width = 50px>  </picture>GitHub: <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Statistics.gif?raw=true" width = 50px></h2>
 <p align="center"> 
   <!--- stats (start) -->
 <table align="center">
@@ -216,7 +216,6 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 </tr>
 </table>
 
-
 <a href="https://github.com/vibrantfix#gh-dark-mode-only">
   <img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=0:243694,50:264778,100:427786" alt="Header" width="100%" align = "left"/>
 </a>
@@ -230,4 +229,3 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 <!--
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=carlosburgos1709" alt="carlosburgos1709" /></a> </p>
 -->
-
