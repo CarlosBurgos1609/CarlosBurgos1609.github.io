@@ -1,7 +1,7 @@
-
-<!--Header -->
-[![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
-<div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>
+>[!IMPORTANT]
+><!--Header -->
+>[![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
+>_***<div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>***_
 <!--h3 align="center">
 I am a systems engineer from CESMAG University, I have knowledge of React, CSS, sass, C#, Html, python, java script, C++, flutter, I like to make web pages in my free time.</h3>-->
 
@@ -21,45 +21,46 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 <a href="https://instagram.com/anderson_mend53" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="anderson_mend53" height="60" width="50" /></a>
 </p>
 -->
-<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>
-<p align="center">
-  <a href="https://carlosburgos1609.github.io/build/"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//web.png" alt="Website"/></a>
-	<a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
-	<a href="https://github.com/CarlosBurgos1609"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
-	<a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
-	<a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook"/></a>
-	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
-	<a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube"/></a>
-	<a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify"/></a>
-	<a href="https://discord.gg/yZzMFqZp"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
-	<a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat"/></a>
-	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/x.png" alt="twitter"/></a>
- 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/pinterest.png" alt="pinterest"/></a>
-  	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/reddit.png" alt="reddit"/></a>
-   	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/skype.png" alt="skype"/></a>
-    	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitch.png" alt="twitch"/></a>
- 
-	
-</p>
+***<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>***
+
+>[!WARNING]
+><p align="center">
+>  <a href="https://carlosburgos1609.github.io/build/"><img src="https://dmhyuogexgghinvfgoup.supabase.co/storage/v1/object/public/icons//web.png" alt="Website"/></a>
+>	<a href="caburgos.0325@unicesmag.edu.co"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
+>	<a href="https://github.com/CarlosBurgos1609"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
+>	<a href="https://www.linkedin.com/in/carlos-alexander-burgos-jaramillo-3171b533a/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+>	<a href="https://www.facebook.com/profile.php?id=61569174632410"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="Facebook"/></a>
+>	<a href="https://www.instagram.com/carlitos_burgosj/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
+>	<a href="https://www.youtube.com/@solracb/playlists"><img src="https://img.icons8.com/bubbles/50/000000/youtube.png" alt="Youtube"/></a>
+>	<a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j"><img src="https://img.icons8.com/bubbles/50/000000/spotify.png" alt="Spotify"/></a>
+>	<a href="https://discord.gg/yZzMFqZp"><img src="https://img.icons8.com/bubbles/50/000000/discord.png" alt="Discord"/></a>
+>	<a href="https://www.tiktok.com/@carlitosburgosj1609"><img src="https://img.icons8.com/bubbles/50/000000/tiktok.png" alt="tiktok"/></a>
+>	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/whatsapp.png" alt="whatsapp"/></a>
+>	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/deezer.png" alt="deezer"/></a>
+>	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/snapchat.png" alt="snapchat"/></a>
+>	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/x.png" alt="twitter"/></a>
+> 	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/pinterest.png" alt="pinterest"/></a>
+>  	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/reddit.png" alt="reddit"/></a>
+>  	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/skype.png" alt="skype"/></a>
+>   	<a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitch.png" alt="twitch"/></a>
+></p>
 
 ---
 
-<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>
+***<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>***
 <!--<img align="center" alt="OnePiece_Luffy" src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/anime/luffy.gif"/>-->
 
-<img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
-
-
-- 🔭 I’m currently studying
-  
-- 🌱 I’m currently learning sass, Java y React
-  
-- 👯 I’m looking to collaborate on Proyectos
-  
-- 💬 Ask me about Sql, Java, C#, JavaScript...
+>[!NOTE]
+><img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
+>
+>
+>- 🔭 I’m currently studying
+>  
+>- 🌱 I’m currently learning sass, Java y React
+>  
+>- 👯 I’m looking to collaborate on Proyectos
+>  
+>- 💬 Ask me about Sql, Java, C#, JavaScript...
   
 - 🎧 Fun fact: like the music.
 
@@ -69,33 +70,124 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 <!--<img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />-->
 
-<h2 align="center">:headphones: Spotify Playing <img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" /></h2>
+***<h2 align="center">:headphones: My spotify playlists :headphones: </h2>***
 
-[![rock-español](https://img.shields.io/badge/Rock%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3GWu39s0U4TTdGv7MpzC5P) 
-[![Salsa](https://img.shields.io/badge/Salsa-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7ARdbqV0W6SQSYyJ0pH3ZY)
-[![Merengue](https://img.shields.io/badge/Merengue-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/10nfX6VXflrOquAKmA1bMz)
-[![Rock en ingles](https://img.shields.io/badge/Rock%20En%20Ingles-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/5P6n1BNwogBmLXZqIwlk3e) 
-[![Rock y poo 80 y 90](https://img.shields.io/badge/Rock%20and%20Pop%20Retro-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6KERsvpYzzhISMRnJz77xh)
-[![Pop](https://img.shields.io/badge/POP-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/73C5mk3LRQtxzZ2dTf22ic)
-[![Pop latino](https://img.shields.io/badge/POP%20Latino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6F2QF1tMHv6U9B8QMn1pbR)
-[![Electrónica](https://img.shields.io/badge/Electrónica-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/55g6nZwjigkdi3jIeVXBo9)
-[![Pop en español](https://img.shields.io/badge/Pop%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/40BbhGPEcklGp49QrSlFfZ)
-[![Cumbia](https://img.shields.io/badge/Cumbia-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3wdr8eEILMkHJDXNu12Y2N)
-[![Trap Argentino](https://img.shields.io/badge/Trap%20Argentino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4lRMQOJAUwlnPN0u6vltCa)
-[![Bachata](https://img.shields.io/badge/Bachata-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/12WRhlSnurKbWGD22hftSB)
-[![Hip-Hop/Rap](https://img.shields.io/badge/Hip%20Hop%20/Rap-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7qOs3OWDkor8Wk3eBeXpHb)
-[![Baladas](https://img.shields.io/badge/Baladas-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6ZDDxuQj8VQWAluDNjHp1U)
+>[!TIP]
+><div align="left">
+>
+><img width="250" align="right" alt="GIF" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
+>
+>[![rock-español](https://img.shields.io/badge/Rock%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3GWu39s0U4TTdGv7MpzC5P) 
+>[![Salsa](https://img.shields.io/badge/Salsa-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7ARdbqV0W6SQSYyJ0pH3ZY)
+>[![Merengue](https://img.shields.io/badge/Merengue-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/10nfX6VXflrOquAKmA1bMz)
+>[![Rock en ingles](https://img.shields.io/badge/Rock%20En%20Ingles-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/5P6n1BNwogBmLXZqIwlk3e) 
+>[![Rock y poo 80 y 90](https://img.shields.io/badge/Rock%20and%20Pop%20Retro-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6KERsvpYzzhISMRnJz77xh)
+>[![Pop](https://img.shields.io/badge/POP-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/73C5mk3LRQtxzZ2dTf22ic)
+>[![Pop latino](https://img.shields.io/badge/POP%20Latino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6F2QF1tMHv6U9B8QMn1pbR)
+>[![Electrónica](https://img.shields.io/badge/Electrónica-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/55g6nZwjigkdi3jIeVXBo9)
+>[![Pop en español](https://img.shields.io/badge/Pop%20En%20Español-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/40BbhGPEcklGp49QrSlFfZ)
+>[![Cumbia](https://img.shields.io/badge/Cumbia-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/3wdr8eEILMkHJDXNu12Y2N)
+>[![Trap Argentino](https://img.shields.io/badge/Trap%20Argentino-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/4lRMQOJAUwlnPN0u6vltCa)
+>[![Bachata](https://img.shields.io/badge/Bachata-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/12WRhlSnurKbWGD22hftSB)
+>[![Hip-Hop/Rap](https://img.shields.io/badge/Hip%20Hop%20/Rap-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/7qOs3OWDkor8Wk3eBeXpHb)
+>[![Baladas](https://img.shields.io/badge/Baladas-%231DB954.svg?&style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/6ZDDxuQj8VQWAluDNjHp1U)
+>
+><div align="center">
+>	
+>[![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
+>
+>
+></div>
+><picture>
+>  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph-dark.svg">
+>  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
+>  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
+></picture>
 
-
+<!---
 [![Spotify](https://readme-spotify.warengonzaga.com/api/spotify?&aling=center)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=blue)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
+-->
 
 
 ---
 
-<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px>  </picture> Languages and Tools:</h2>
-<p align="center"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="70" height="70"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="70" height="70"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="70" height="70"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="70" height="70"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="70" height="70"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="70" height="70"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="70" height="70"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="70" height="70"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="70" height="70"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="70" height="70"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="70" height="70"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="70" height="70"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="70" height="70"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="70" height="70"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="70" height="70"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="70" height="70"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="70" height="70"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="70" height="70"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="70" height="70"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="70" height="70"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="70" height="70"/> </a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="visual_studio_code" width="70" height="70"/> </a> </p>
+***<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px>  </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </h2>***
+
+> [!IMPORTANT]
+> <p align="center">
+>  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
+>    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="30" height="30" />
+>  </a>
+>  <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="30" height="30" />
+>  </a>
+>  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30" />
+>  </a>
+>  <a href="https://dart.dev" target="_blank" rel="noreferrer">
+>    <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="30" height="30" />
+>  </a>
+>  <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+>    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="30" height="30" />
+> </a>
+>  <a href="https://flutter.dev" target="_blank" rel="noreferrer">
+>    <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="30" height="30" />
+>  </a>
+>  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+>    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30" />
+>  </a>
+>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30" />
+>  </a>
+>  <a href="https://www.java.com" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="30" height="30" />
+>  </a>
+>  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30" />
+>  </a>
+>  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="30" height="30" />
+>  </a>
+>  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer">
+>    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="30" height="30" />
+>  </a>
+>  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="30" height="30" />
+>  </a>
+>  <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="30" height="30" />
+>  </a>
+>  <a href="https://www.php.net" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="30" height="30" />
+>  </a>
+>  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="30" height="30" />
+>  </a>
+>  <a href="https://postman.com" target="_blank" rel="noreferrer">
+>    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="30" height="30" />
+>  </a>
+>  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="30" height="30" />
+>  </a>
+>  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="30" height="30" />
+>  </a>
+>  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+>    <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="30" height="30" />
+>  </a>
+>  <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
+>    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="30" height="30" />
+>  </a>
+>  <a href="https://unity.com/" target="_blank" rel="noreferrer">
+>    <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="30" height="30" />
+>  </a>
+>  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+>    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="visual_studio_code" width="30" height="30" />
+>  </a>
+></p>
+
 
 ---
 <!--
@@ -127,7 +219,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 <a href="https://github.com/vibrantfix#gh-dark-mode-only">
   <img src="https://capsule-render.vercel.app/api?section=footer&type=waving&color=0:243694,50:264778,100:427786" alt="Header" width="100%" align = "left"/>
-  </a>
+</a>
 <!--
 <p align="center">
         <img src="https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg" alt="Github Stats"  />
