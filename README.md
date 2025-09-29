@@ -2,7 +2,7 @@
 >
 > [![MasterHead](https://github.com/user-attachments/assets/47e082af-6034-455d-9f03-46737fbebd89)](https://carlosburgos1609.github.io/build)
 >
-> ***<div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>***
+> <div align="center"><h1>Hi my name is Carlos Burgos👋</h1></div>
 
 <!--h3 align="center">
 I am a systems engineer from CESMAG University, I have knowledge of React, CSS, sass, C#, Html, python, java script, C++, flutter, I like to make web pages in my free time.</h3>-->
@@ -24,7 +24,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 </p>
 -->
 
-**_<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>_**
+<h2 align="center"><img src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/others/astro_cat.webp" width="50">Connect with me:</h2>
 
 
 > <p align="center">
@@ -50,7 +50,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 ---
 
-***_<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>_***
+<h2 align="center"><img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> About Me </h2>
 
 <!--<img align="center" alt="OnePiece_Luffy" src="https://raw.githubusercontent.com/dev-akshat/archive/main/images/gifs/anime/luffy.gif"/>-->
 
@@ -72,7 +72,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 <!--<img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />-->
 
 
-***<h2 align="center">🎧 My spotify playlists 🎧 </h2>***
+<h2 align="center">🎧 My spotify playlists 🎧 </h2>
 
 <!-- > <img width="250" align="right" alt="GIF" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" /> -->
 
@@ -99,6 +99,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 > [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
 >
 > </div>
+>
 > <picture>
 >  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph-dark.svg">
 >  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CarlosBurgos1609/CarlosBurgos1609/output/pacman-contribution-graph.svg">
@@ -113,7 +114,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 ---
 
-**_<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </h2>_**
+<h2 align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </h2>
 
 
 > <p align="center">
