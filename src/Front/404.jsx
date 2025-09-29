@@ -10,7 +10,7 @@ function Error() {
         <div class="log">
           <div class="logo"><a href="/build"><img src={Mylogo} alt="logo" /></a></div>
           <div class="text">
-            <p>Pagina no encontrada de click en el logo para volver a la pestaña principal</p>
+            <p>Pagina no encontrada de click en el logo para volver a la pestaña principal.</p>
           </div>
         </div>
         </section>
