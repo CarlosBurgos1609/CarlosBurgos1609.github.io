@@ -119,7 +119,7 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 ---
 
-< align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> 
+<div align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> </div>
 
 
 > <p align="center">
