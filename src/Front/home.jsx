@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './../Style/style.scss';
 import profileImage from './../img/my profile/profile.png';
+import perfilImage from './../img/perfil.png';
 import spotify from './../img/logos/spotify.png';
 import PlayLists from './playlists';
 
@@ -280,15 +281,22 @@ function Home() {
               </h2>
               <div className="spotify-content">
                 <div className="spotify-now-playing">
-                  <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j" target="_blank" rel="noreferrer">
-                    <img 
-                      src={currentTheme === 'dark' 
-                        ? "https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff"
-                        : "https://novatorem-sage-one.vercel.app/api/spotify?background_color=ffffff&border_color=000000"
-                      } 
-                      alt="Spotify Now Playing" 
-                    />
-                  </a>
+                  <div className="spotify-profile-section">
+                    <div className="profile-image-container">
+                      <img src={perfilImage} alt="Profile" className="spotify-profile-img" />
+                    </div>
+                    <div className="now-playing-container">
+                      <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j" target="_blank" rel="noreferrer">
+                        <img 
+                          src={currentTheme === 'dark' 
+                            ? "https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff"
+                            : "https://novatorem-sage-one.vercel.app/api/spotify?background_color=ffffff&border_color=000000"
+                          } 
+                          alt="Spotify Now Playing" 
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="spotify-playlists-preview">
                   <iframe src="https://open.spotify.com/embed/playlist/5P6n1BNwogBmLXZqIwlk3e?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
