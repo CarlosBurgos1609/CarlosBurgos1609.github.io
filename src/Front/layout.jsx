@@ -78,6 +78,8 @@ const Layout = () => {
                                             <div className="star"></div>
                                             <div className="star"></div>
                                             <div className="star"></div>
+                                            <div className="star"></div>
+                                            <div className="star"></div>
                                         </div>
                                     </div>
                                 </div>

@@ -49,7 +49,7 @@ function Home() {
               <h1 className="profile-name">Carlos Alexander Burgos J.</h1>
               <p className="profile-username">CarlosBurgos1609</p>
               <p className="profile-bio">
-                🎓 Systems Engineer from CESMAG University<br/>
+                🎓 Systems Engineer<br/>
                 💻 Full Stack Developer<br/>
                 🎵 Music Lover<br/>
                 🚀 Always learning new technologies
@@ -60,7 +60,7 @@ function Home() {
                   <span>CESMAG University</span>
                 </div>
                 <div className="detail-item">
-                  <span className="icon">📍</span>
+                  <span className="icon">🇨🇴</span>
                   <span>Colombia</span>
                 </div>
                 <div className="detail-item">
