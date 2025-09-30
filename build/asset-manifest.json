@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.8c30e7d1.css",
-    "main.js": "/build/static/js/main.b9b65333.js",
+    "main.css": "/build/static/css/main.5fbd23e2.css",
+    "main.js": "/build/static/js/main.34104cbb.js",
     "static/js/453.daebc7d9.chunk.js": "/build/static/js/453.daebc7d9.chunk.js",
     "static/media/profile.png": "/build/static/media/profile.64dddd31b95d17ff280c.png",
     "static/media/ratatypecr.png": "/build/static/media/ratatypecr.9726606d86c2b3c8bb22.png",
@@ -14,7 +14,7 @@
     "static/media/fullstak.png": "/build/static/media/fullstak.08d20750044f033c9317.png",
     "static/media/colombia.png": "/build/static/media/colombia.f8d3871f342f7e95fb73.png",
     "static/media/profileYoutubeLight.png": "/build/static/media/profileYoutubeLight.6d61504e6004fff6144b.png",
-    "static/media/sena.png": "/build/static/media/sena.a4243a3ee5d208f6e2de.png",
+    "static/media/sena.png": "/build/static/media/sena.895f59220b5fccffc225.png",
     "static/media/profileYoutubeDark.png": "/build/static/media/profileYoutubeDark.0b6a8a73c5cba5e426ad.png",
     "static/media/university.png": "/build/static/media/university.15708553bfd6c92397d8.png",
     "static/media/spotify.png": "/build/static/media/spotify.7fffcad76b3e73db5788.png",
@@ -27,12 +27,12 @@
     "static/media/bici.png": "/build/static/media/bici.850176183ecba4a8863a.png",
     "static/media/ratatype.png": "/build/static/media/ratatype.6370dc749326a99f66ef.png",
     "index.html": "/build/index.html",
-    "main.8c30e7d1.css.map": "/build/static/css/main.8c30e7d1.css.map",
-    "main.b9b65333.js.map": "/build/static/js/main.b9b65333.js.map",
+    "main.5fbd23e2.css.map": "/build/static/css/main.5fbd23e2.css.map",
+    "main.34104cbb.js.map": "/build/static/js/main.34104cbb.js.map",
     "453.daebc7d9.chunk.js.map": "/build/static/js/453.daebc7d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c30e7d1.css",
-    "static/js/main.b9b65333.js"
+    "static/css/main.5fbd23e2.css",
+    "static/js/main.34104cbb.js"
   ]
 }
