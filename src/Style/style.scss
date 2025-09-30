@@ -1597,6 +1597,258 @@ footer {
   }
 }
 
+/* YouTube Section */
+.youtube-section {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    color: var(--text-primary) !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.youtube-content {
+  display: grid;
+  gap: 24px;
+}
+
+.youtube-profile-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* YouTube Playlist Slider */
+.youtube-playlist-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  
+  h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .playlist-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    .nav-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      
+      /* Estilos para modo oscuro (por defecto) */
+      background: #1e3a8a;
+      border: 1px solid #1e40af;
+      color: white;
+      box-shadow: 
+        0 4px 12px rgba(59, 130, 246, 0.4),
+        0 0 20px rgba(59, 130, 246, 0.2);
+      
+      &:hover {
+        background: #1d4ed8;
+        transform: scale(1.1);
+        box-shadow: 
+          0 6px 20px rgba(59, 130, 246, 0.6),
+          0 0 30px rgba(59, 130, 246, 0.4);
+      }
+      
+      &:active {
+        transform: scale(0.95);
+        box-shadow: 
+          0 2px 8px rgba(59, 130, 246, 0.5),
+          0 0 15px rgba(59, 130, 246, 0.3);
+      }
+    }
+    
+    .playlist-counter {
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+/* Estilos específicos para modo claro */
+body[data-theme="light"] .playlist-header {
+  h3 {
+    color: #2563eb; /* Texto azul en modo claro */
+    background: linear-gradient(90deg, #2563eb 0%, #3b82f6 50%, #2563eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+      animation: metallic-shine 3s infinite;
+      z-index: 1;
+    }
+  }
+  
+  .playlist-nav .nav-btn {
+    background: transparent;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    box-shadow: 
+      0 4px 12px rgba(37, 99, 235, 0.3),
+      0 0 15px rgba(37, 99, 235, 0.2);
+    
+    &:hover {
+      background: #2563eb;
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 
+        0 6px 20px rgba(37, 99, 235, 0.5),
+        0 0 25px rgba(37, 99, 235, 0.3);
+    }
+  }
+}
+
+/* Animación de brillo metalizado */
+@keyframes metallic-shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.playlist-content {
+  flex: 1;
+  
+  iframe {
+    border-radius: 6px;
+    width: 100%;
+    
+    @media (max-width: 768px) {
+      height: 250px;
+    }
+  }
+}
+
+.youtube-profile-container {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px; /* Restauro el padding para que la imagen no se corte */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .youtube-profile-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Mantiene las proporciones originales */
+    object-fit: contain; /* Se ajusta sin cortarse */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.youtube-playlists-container {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.youtube-button {
+  text-align: center;
+  margin-top: 16px; /* Espaciado desde los contenedores de arriba */
+  
+  .view-all-playlists {
+    background: #FF0000 !important; /* Color rojo de YouTube */
+    color: white !important;
+    border: 1px solid #FF0000 !important;
+    border-radius: 6px;
+    padding: 12px 24px; /* Más padding para que se vea mejor como botón independiente */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    &:hover {
+      background: #CC0000 !important;
+      transform: scale(1.05);
+    }
+  }
+}
+
 /* Navigation Theme Toggle Button - Animated Style */
 .theme-toggle-nav {
   display: flex;

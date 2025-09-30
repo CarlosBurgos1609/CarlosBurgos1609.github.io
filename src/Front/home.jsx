@@ -3,10 +3,94 @@ import './../Style/style.scss';
 import profileImage from './../img/my profile/profile.png';
 import perfilImage from './../img/perfil.png';
 import spotify from './../img/logos/spotify.png';
+import youtube from './../img/logos/youtube.png';
+import youtubemusic from './../img/logos/youtube-music.png';
+import profileYoutubeDark from './../img/my profile/profileYoutubeDark.png';
+import profileYoutubeLight from './../img/my profile/profileYoutubeLight.png';
 import PlayLists from './playlists';
 
 function Home() {
   const [currentTheme, setCurrentTheme] = useState('light');
+
+  // YouTube playlists data
+  const youtubePlaylists = [
+    {
+      id: 1,
+      title: "Rock en Inglés",
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=0oUa5yP5FcpVrnXm&amp;list=PLv8lOsaMAfyYxhZf_vPxs7nR-JP6UIL3n"
+    },
+    {
+      id: 2,
+      title: "Rock en Español", 
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=AYUbSj2qw0xZlkJv&amp;list=PLv8lOsaMAfyYnO8uy1vPbiklGUuUuhFPs"
+    },
+    {
+      id: 3,
+      title: "Trap Argentino",
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=hm4WD4Cpnf3c8Ce0&amp;list=PLv8lOsaMAfya4nrCEKg9FLD_HM-96AP-a"
+    },
+    {
+      id: 4,
+      title: "Anime",
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=_LvIH3BP_lEsc_2x&amp;list=PLv8lOsaMAfyZh5FBj6ggszF5lYVJEo4Gj"
+    },
+    {
+      id: 5,
+      title: "Cumbia",
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=AXrp4LsgvlY-cHy0&amp;list=PLv8lOsaMAfyYm8v8kQ7w_O-NJoiKQ365h"
+    },
+    {
+      id: 6,
+      title: "Salsa",
+      embedUrl: "https://www.youtube.com/embed/videoseries?si=10NvCONmcUEtNdl_&amp;list=PLv8lOsaMAfyYkyf5QnXUoBC_JO-DwycvJ"
+    }
+  ];
+
+  const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
+
+  // Component for YouTube playlist slider
+  const YouTubePlaylistSlider = () => {
+    const currentPlaylist = youtubePlaylists[currentPlaylistIndex];
+    
+    const nextPlaylist = () => {
+      setCurrentPlaylistIndex((prev) => 
+        prev === youtubePlaylists.length - 1 ? 0 : prev + 1
+      );
+    };
+
+    const prevPlaylist = () => {
+      setCurrentPlaylistIndex((prev) => 
+        prev === 0 ? youtubePlaylists.length - 1 : prev - 1
+      );
+    };
+
+    return (
+      <div className="youtube-playlist-slider">
+        <div className="playlist-header">
+          <h3>{currentPlaylist.title}</h3>
+          <div className="playlist-nav">
+            <button onClick={prevPlaylist} className="nav-btn">‹</button>
+            <span className="playlist-counter">
+              {currentPlaylistIndex + 1} / {youtubePlaylists.length}
+            </span>
+            <button onClick={nextPlaylist} className="nav-btn">›</button>
+          </div>
+        </div>
+        <div className="playlist-content">
+          <iframe 
+            width="100%" 
+            height="300" 
+            src={currentPlaylist.embedUrl}
+            title={currentPlaylist.title}
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen>
+          </iframe>
+        </div>
+      </div>
+    );
+  };
 
   useEffect(() => {
     // Detectar el tema actual del body
@@ -305,6 +389,34 @@ function Home() {
                 <div className="spotify-button">
                   <a href="https://carlosburgos1609.github.io/build/#/playlists">
                     <button className="view-all-playlists">View all playlists →</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* YouTube Section */}
+            <div className="youtube-section">
+              <h2>
+                <img src={youtubemusic} alt="youtube-music" width="30" /> 
+                My YouTube Playlists 
+                <img src={youtubemusic} alt="youtube-music" width="30" />
+              </h2>
+              <div className="youtube-content">
+                <div className="youtube-profile-section">
+                  <div className="youtube-profile-container">
+                    <img 
+                      src={currentTheme === 'dark' ? profileYoutubeDark : profileYoutubeLight} 
+                      alt="YouTube Profile" 
+                      className="youtube-profile-img" 
+                    />
+                  </div>
+                  <div className="youtube-playlists-container">
+                    <YouTubePlaylistSlider />
+                  </div>
+                </div>
+                <div className="youtube-button">
+                  <a href="https://carlosburgos1609.github.io/build/#/playlists">
+                    <button className="view-all-playlists">View all YouTube playlists →</button>
                   </a>
                 </div>
               </div>
