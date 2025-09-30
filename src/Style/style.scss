@@ -1101,17 +1101,26 @@ footer {
   display: flex;
   gap: 24px;
   margin-bottom: 32px;
+  min-height: 100vh; // Altura mínima completa de la pantalla
   
   @media (max-width: 768px) {
     flex-direction: column;
+    min-height: auto; // En móvil no forzar altura completa
   }
 }
 
 .profile-sidebar {
   flex: 0 0 320px;
+  position: sticky;
+  top: 0;
+  height: 100vh; // Altura completa de la pantalla
+  overflow-y: auto; // Scroll si el contenido es muy largo
   
   @media (max-width: 768px) {
     flex: 1;
+    position: static; // En móvil no sticky
+    height: auto; // En móvil altura automática
+    overflow-y: visible; // En móvil sin scroll
   }
 }
 
@@ -1341,22 +1350,57 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    & img {
+      width: 30px;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+  img{
+    border-radius: 10px;
   }
 }
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr); // 3 columnas fijas en desktop
+  grid-template-rows: repeat(2, 1fr);    // 2 filas fijas en desktop
+  gap: 20px;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // 2 columnas en tablet
+    grid-template-rows: auto;               // Filas automáticas en tablet
+    gap: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;            // 1 columna en móvil
+    grid-template-rows: auto;               // Filas automáticas en móvil
+    gap: 16px;
+  }
 }
 
 .tech-category {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: fit-content; // Altura automática basada en contenido
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
   h3 {
     font-size: 16px;
     font-weight: 600;
     margin: 0 0 16px 0;
     color: var(--text-primary) !important;
     text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
   }
   
   .tech-icons {
@@ -1364,24 +1408,33 @@ footer {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
     
     a {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 8px;
+      padding: 6px;
       border-radius: 6px;
-      transition: background-color 0.2s;
+      transition: all 0.2s ease;
+      background: transparent;
       
       &:hover {
         background: var(--bg-primary) !important;
+        transform: translateY(-1px);
       }
       
       img {
-        transition: transform 0.2s;
+        transition: transform 0.2s ease;
+        display: block;
         
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.05);
         }
       }
     }
