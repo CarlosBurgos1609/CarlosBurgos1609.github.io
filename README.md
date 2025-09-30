@@ -96,10 +96,11 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 >
 > 
 >
-> [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
-> [![Spotify](https://novatorem-sage-one.vercel.app/api/spotify)](https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j)
->
-> 
+> <div align="center">
+>   <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j">
+>     <img src="https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" />
+>   </a>
+> </div>
 >
 > <div align="center">
 >
@@ -119,7 +120,15 @@ I am a systems engineer from CESMAG University, I have knowledge of React, CSS, 
 
 ---
 
-<div align="center"> <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> Languages and Tools: <picture> <img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width = 50px> </picture> </div>
+<div align="center" style="display: flex; align-items: center; justify-content: center; flex-direction: row;">
+  <picture>
+    <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="30px">
+  </picture>
+  <h1 style="margin: 0 20px;">Languages and Tools:</h1>
+  <picture>
+    <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="30px">
+  </picture>
+</div>
 
 
 > <p align="center">
