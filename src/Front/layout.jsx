@@ -1,14 +1,41 @@
 // import { UseState } from 'react';
 import { Link, Outlet } from "react-router-dom";
+import { useEffect, useState } from 'react';
 import Mylogo from './../img/logos/Mylogo.png'
 import menu from './../img/menu.png'
 
 const Layout = () => {
-    // const [theme, setTheme] = UseState("light");
+    const [theme, setTheme] = useState('light');
 
-    // const switchTheme = () =>
-    //     theme === "light" ? setTheme("dark") : setTheme("light");
-    // const icon = theme === "light" ? sun : moon;
+    useEffect(() => {
+        // Detectar preferencia del sistema
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+        setTheme(savedTheme);
+        
+        // Aplicar el tema al body para que afecte toda la aplicación
+        document.body.setAttribute('data-theme', savedTheme);
+        
+        // Escuchar cambios en la preferencia del sistema
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => {
+            if (!localStorage.getItem('theme')) {
+                const newTheme = e.matches ? 'dark' : 'light';
+                setTheme(newTheme);
+                document.body.setAttribute('data-theme', newTheme);
+            }
+        };
+        
+        mediaQuery.addEventListener('change', handleChange);
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, []);
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+        document.body.setAttribute('data-theme', newTheme);
+    };
 
     return <div> 
         <header class="header" >
@@ -33,9 +60,35 @@ const Layout = () => {
                     <li><Link to="/contacts">Contactos</Link></li>
                     {/* <li><Link to="/socialNetworks">Redes sociales</Link></li> */}
                     <li><Link to="/playlists">PlayLists</Link></li>
-                    {/* <li>
-                        <img src={icon} alt="dark" onClick={switchTheme} />
-                    </li> */}
+                    <li className="theme-toggle-nav">
+                        <div className="theme-toggle-container" onClick={toggleTheme}>
+                            <div className={`theme-toggle-switch ${theme}`}>
+                                <div className="theme-toggle-track">
+                                    <div className="theme-toggle-track-light">
+                                        <div className="logo-icon light-logo">
+                                            <img src={Mylogo} alt="Light mode" />
+                                        </div>
+                                        <div className="clouds"></div>
+                                    </div>
+                                    <div className="theme-toggle-track-dark">
+                                        <div className="logo-icon dark-logo">
+                                            <img src={Mylogo} alt="Dark mode" />
+                                        </div>
+                                        <div className="stars">
+                                            <div className="star"></div>
+                                            <div className="star"></div>
+                                            <div className="star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="theme-toggle-thumb">
+                                    <div className="thumb-icon">
+                                        <img src={Mylogo} alt="Theme toggle" className={`thumb-logo ${theme}`} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
                     {/* <a href="#" class="btn"><button class="rounded">Iniciar sesión</button></a>
                     <a href="#" class="btn"><button class="rounded">Registrarse</button></a> */}
