@@ -14,6 +14,14 @@ import newTecnologyIcon from './../img/icons/newTecnology.png';
 import colombiaIcon from './../img/icons/colombia.png';
 import gmailIcon from './../img/icons/gmail.png';
 import webIcon from './../img/icons/web.png';
+// Import certificates
+import ratatypeCert from './../img/certificates/ratatypecr.png';
+import scrumCert from './../img/certificates/scrum.png';
+import senaCert from './../img/certificates/sena.png';
+// Import certificate logos
+import ratatypeLogo from './../img/logos/ratatype.png';
+import scrumLogo from './../img/logos/scrum.png';
+import senaLogo from './../img/logos/sena.png';
 
 function Home() {
   const [currentTheme, setCurrentTheme] = useState('light');
@@ -53,6 +61,36 @@ function Home() {
   ];
 
   const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
+
+  // Certificates data
+  const certificates = [
+    {
+      id: 1,
+      title: "RataType Typing Certification",
+      institution: "RataType",
+      logo: ratatypeLogo,
+      certificate: ratatypeCert,
+      description: "Certificación en mecanografía avanzada"
+    },
+    {
+      id: 2,
+      title: "Scrum Fundamentals Certified",
+      institution: "SCRUMstudy",
+      logo: scrumLogo,
+      certificate: scrumCert,
+      description: "Fundamentos de metodologías ágiles Scrum"
+    },
+    {
+      id: 3,
+      title: "SENA Technical Certification",
+      institution: "SENA",
+      logo: senaLogo,
+      certificate: senaCert,
+      description: "Certificación técnica en desarrollo de software"
+    }
+  ];
+
+  const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
 
   // Component for YouTube playlist slider
   const YouTubePlaylistSlider = () => {
@@ -98,6 +136,117 @@ function Home() {
     );
   };
 
+  // Component for Certificates slider
+  const CertificatesSlider = () => {
+    const [touchStart, setTouchStart] = useState(null);
+    const [touchEnd, setTouchEnd] = useState(null);
+
+    const nextCertificate = () => {
+      setCurrentCertificateIndex((prev) => 
+        prev === certificates.length - 1 ? 0 : prev + 1
+      );
+    };
+
+    const prevCertificate = () => {
+      setCurrentCertificateIndex((prev) => 
+        prev === 0 ? certificates.length - 1 : prev - 1
+      );
+    };
+
+    // Auto-scroll for mobile
+    useEffect(() => {
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile) {
+        const interval = setInterval(() => {
+          nextCertificate();
+        }, 3000);
+        return () => clearInterval(interval);
+      }
+    }, [currentCertificateIndex]);
+
+    // Touch handlers for swipe functionality
+    const handleTouchStart = (e) => {
+      setTouchEnd(null);
+      setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+      setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+      if (!touchStart || !touchEnd) return;
+      
+      const distance = touchStart - touchEnd;
+      const isLeftSwipe = distance > 50;
+      const isRightSwipe = distance < -50;
+
+      if (isLeftSwipe) {
+        nextCertificate();
+      }
+      if (isRightSwipe) {
+        prevCertificate();
+      }
+    };
+
+    return (
+      <div className="certificates-slider">
+        <div className="certificates-header">
+          <h3>Mis Certificaciones</h3>
+          <div className="certificates-nav">
+            <button onClick={prevCertificate} className="nav-btn">‹</button>
+            <span className="certificates-counter">
+              {currentCertificateIndex + 1} / {certificates.length}
+            </span>
+            <button onClick={nextCertificate} className="nav-btn">›</button>
+          </div>
+        </div>
+        <div className="certificates-content">
+          {/* Desktop view - show all certificates */}
+          <div className="certificates-desktop">
+            {certificates.map((cert) => (
+              <div key={cert.id} className="certificate-card">
+                <div className="certificate-header">
+                  <img src={cert.logo} alt={cert.institution} className="certificate-logo" />
+                  <div className="certificate-info">
+                    <h4>{cert.title}</h4>
+                    <p>{cert.institution}</p>
+                    <span>{cert.description}</span>
+                  </div>
+                </div>
+                <div className="certificate-image">
+                  <img src={cert.certificate} alt={cert.title} />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Mobile view - show current certificate */}
+          <div 
+            className="certificates-mobile"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div className="certificate-card">
+              <div className="certificate-header">
+                <img src={certificates[currentCertificateIndex].logo} alt={certificates[currentCertificateIndex].institution} className="certificate-logo" />
+                <div className="certificate-info">
+                  <h4>{certificates[currentCertificateIndex].title}</h4>
+                  <p>{certificates[currentCertificateIndex].institution}</p>
+                  <span>{certificates[currentCertificateIndex].description}</span>
+                </div>
+              </div>
+              <div className="certificate-image">
+                <img src={certificates[currentCertificateIndex].certificate} alt={certificates[currentCertificateIndex].title} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   useEffect(() => {
     // Detectar el tema actual del body
     const detectTheme = () => {
@@ -131,7 +280,7 @@ function Home() {
     <body>
       <div className="github-container">{/* Removed theme toggle button since it's now in the header */}
         {/* Header Section - GitHub Style */}
-        <section className="profile-header">
+        <section id="inicio" className="profile-header">
           <div className="profile-sidebar">
             <div className="profile-image-container">
               <img src={profileImage} alt="Carlos Alexander Burgos" className="profile-image" />
@@ -209,7 +358,7 @@ function Home() {
 
             
             {/* Technologies Section */}
-            <div className="technologies-section">
+            <div id="lenguajes" className="technologies-section">
               <h2>
                 <picture> 
                   <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Programming_Languages.gif?raw=true" width="30px" />
@@ -339,7 +488,7 @@ function Home() {
               </div>
             </div>
 {/* Popular Repositories */}
-            <div className="repositories-section">
+            <div id="aplicaciones" className="repositories-section">
               <h2>Popular repositories</h2>
               <div className="repo-grid">
                 <div className="repo-card">
@@ -375,7 +524,7 @@ function Home() {
             </div>
 
             {/* Spotify Section */}
-            <div className="spotify-section">
+            <div id="contactos" className="spotify-section">
               <h2>
                 <img src={spotify} alt="spotify" width="30" /> 
                 My Music 
@@ -413,7 +562,7 @@ function Home() {
             </div>
 
             {/* YouTube Section */}
-            <div className="youtube-section">
+            <div id="playlists" className="youtube-section">
               <h2>
                 <img src={youtubemusic} alt="youtube-music" width="30" /> 
                 My YouTube Playlists 
@@ -437,6 +586,16 @@ function Home() {
                     <button className="view-all-playlists">View all YouTube playlists →</button>
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* Certificates Section */}
+            <div id="certificados" className="certificates-section">
+              <h2>
+                🏆 Mis Certificaciones 🏆
+              </h2>
+              <div className="certificates-content">
+                <CertificatesSlider />
               </div>
             </div>
           </div>

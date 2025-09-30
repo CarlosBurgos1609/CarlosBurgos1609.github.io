@@ -1,5 +1,5 @@
 // import { UseState } from 'react';
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import Mylogo from './../img/logos/Mylogo.png'
 import menu from './../img/menu.png'
@@ -37,6 +37,17 @@ const Layout = () => {
         document.body.setAttribute('data-theme', newTheme);
     };
 
+    // Función para navegación suave a secciones
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return <div> 
         <header class="header" >
         <div class="menu container ">
@@ -52,14 +63,37 @@ const Layout = () => {
             </label>
             <nav class="nav-list">
                 <ul>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/languages">Lenguajes</Link></li>
-                    <li><Link to="/aplicactions">Aplicaciones</Link></li>
-                    <li><Link to="/certificates">Certificados</Link></li>
-                    {/* <li><Link to="/works">Trabajos</Link></li> */}
-                    <li><Link to="/contacts">Contactos</Link></li>
-                    {/* <li><Link to="/socialNetworks">Redes sociales</Link></li> */}
-                    <li><Link to="/playlists">PlayLists</Link></li>
+                    <li>
+                        <a href="#inicio" onClick={(e) => { e.preventDefault(); scrollToSection('inicio'); }}>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lenguajes" onClick={(e) => { e.preventDefault(); scrollToSection('lenguajes'); }}>
+                            Lenguajes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#aplicaciones" onClick={(e) => { e.preventDefault(); scrollToSection('aplicaciones'); }}>
+                            Aplicaciones
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contactos" onClick={(e) => { e.preventDefault(); scrollToSection('contactos'); }}>
+                            Mi música
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#playlists" onClick={(e) => { e.preventDefault(); scrollToSection('playlists'); }}>
+                            PlayLists
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#certificados" onClick={(e) => { e.preventDefault(); scrollToSection('certificados'); }}>
+                            Certificados
+                        </a>
+                    </li>
                     <li className="theme-toggle-nav">
                         <div className="theme-toggle-container" onClick={toggleTheme}>
                             <div className={`theme-toggle-switch ${theme}`}>
