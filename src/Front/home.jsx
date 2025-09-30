@@ -8,6 +8,15 @@ import youtubemusic from './../img/logos/youtube-music.png';
 import profileYoutubeDark from './../img/my profile/profileYoutubeDark.png';
 import profileYoutubeLight from './../img/my profile/profileYoutubeLight.png';
 import PlayLists from './playlists';
+// Import icons
+import ingeIcon from './../img/icons/inge.png';
+import universityIcon from './../img/icons/university.png';
+import fullstakIcon from './../img/icons/fullstak.png';
+import musicIcon from './../img/icons/music.png';
+import newTecnologyIcon from './../img/icons/newTecnology.png';
+import colombiaIcon from './../img/icons/colombia.png';
+import gmailIcon from './../img/icons/gmail.png';
+import webIcon from './../img/icons/web.png';
 
 function Home() {
   const [currentTheme, setCurrentTheme] = useState('light');
@@ -134,26 +143,38 @@ function Home() {
               <h1 className="profile-name">Carlos Alexander Burgos J.</h1>
               <p className="profile-username">CarlosBurgos1609</p>
               <p className="profile-bio">
-                🎓 Systems Engineer<br/>
-                💻 Full Stack Developer<br/>
-                🎵 Music Lover<br/>
-                🚀 Always learning new technologies
+                <span className="bio-item">
+                  <img src={ingeIcon} alt="Systems Engineer" className="bio-icon" />
+                  Systems Engineer
+                </span><br/>
+                <span className="bio-item">
+                  <img src={fullstakIcon} alt="Full Stack Developer" className="bio-icon" />
+                  Full Stack Developer
+                </span><br/>
+                <span className="bio-item">
+                  <img src={musicIcon} alt="Music Lover" className="bio-icon" />
+                  Music Lover
+                </span><br/>
+                <span className="bio-item">
+                  <img src={newTecnologyIcon} alt="Always learning new technologies" className="bio-icon" />
+                  Always learning new technologies
+                </span>
               </p>
               <div className="profile-details">
                 <div className="detail-item">
-                  <span className="icon">🏢</span>
+                  <img src={universityIcon} alt="University" className="detail-icon" />
                   <span>CESMAG University</span>
                 </div>
                 <div className="detail-item">
-                  <span className="icon">🇨🇴</span>
+                  <img src={colombiaIcon} alt="Colombia" className="detail-icon detail-icon-no-invert" />
                   <span>Colombia</span>
                 </div>
                 <div className="detail-item">
-                  <span className="icon">🔗</span>
+                  <img src={webIcon} alt="Website" className="detail-icon" />
                   <a href="https://carlosburgos1609.github.io/build/" target="_blank">carlosburgos1609.github.io</a>
                 </div>
                 <div className="detail-item">
-                  <span className="icon">📧</span>
+                  <img src={gmailIcon} alt="Email" className="detail-icon detail-icon-no-invert" />
                   <span>caburgos.0325@unicesmag.edu.co</span>
                 </div>
               </div>
@@ -189,42 +210,7 @@ function Home() {
               </div>
             </div>
 
-            {/* Popular Repositories */}
-            <div className="repositories-section">
-              <h2>Popular repositories</h2>
-              <div className="repo-grid">
-                <div className="repo-card">
-                  <div className="repo-header">
-                    <h3>CarlosBurgos1609.github.io</h3>
-                    <span className="repo-visibility">Public</span>
-                  </div>
-                  <p className="repo-description">Personal portfolio website built with React</p>
-                  <div className="repo-footer">
-                    <span className="repo-language">
-                      <span className="language-color" style={{backgroundColor: '#61dafb'}}></span>
-                      React
-                    </span>
-                    <span className="repo-stars">⭐ 2</span>
-                  </div>
-                </div>
-                
-                <div className="repo-card">
-                  <div className="repo-header">
-                    <h3>Flutter-Projects</h3>
-                    <span className="repo-visibility">Public</span>
-                  </div>
-                  <p className="repo-description">Collection of Flutter mobile applications</p>
-                  <div className="repo-footer">
-                    <span className="repo-language">
-                      <span className="language-color" style={{backgroundColor: '#02569B'}}></span>
-                      Dart
-                    </span>
-                    <span className="repo-stars">⭐ 5</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            
             {/* Technologies Section */}
             <div className="technologies-section">
               <h2>
@@ -351,6 +337,41 @@ function Home() {
                     <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
                       <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40" />
                     </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+{/* Popular Repositories */}
+            <div className="repositories-section">
+              <h2>Popular repositories</h2>
+              <div className="repo-grid">
+                <div className="repo-card">
+                  <div className="repo-header">
+                    <h3>CarlosBurgos1609.github.io</h3>
+                    <span className="repo-visibility">Public</span>
+                  </div>
+                  <p className="repo-description">Personal portfolio website built with React</p>
+                  <div className="repo-footer">
+                    <span className="repo-language">
+                      <span className="language-color" style={{backgroundColor: '#61dafb'}}></span>
+                      React
+                    </span>
+                    <span className="repo-stars">⭐ 2</span>
+                  </div>
+                </div>
+                
+                <div className="repo-card">
+                  <div className="repo-header">
+                    <h3>Flutter-Projects</h3>
+                    <span className="repo-visibility">Public</span>
+                  </div>
+                  <p className="repo-description">Collection of Flutter mobile applications</p>
+                  <div className="repo-footer">
+                    <span className="repo-language">
+                      <span className="language-color" style={{backgroundColor: '#02569B'}}></span>
+                      Dart
+                    </span>
+                    <span className="repo-stars">⭐ 5</span>
                   </div>
                 </div>
               </div>

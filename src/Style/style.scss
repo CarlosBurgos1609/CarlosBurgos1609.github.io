@@ -1158,6 +1158,20 @@ footer {
     line-height: 1.25;
     margin: 0 0 4px 0;
     color: var(--text-primary) !important;
+    position: relative;
+    
+    /* Efecto metallic - línea blanca para modo claro */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+      animation: metallic-shine 3s infinite;
+      z-index: 1;
+    }
   }
   
   .profile-username {
@@ -1170,8 +1184,21 @@ footer {
   .profile-bio {
     font-size: 16px;
     margin: 0 0 16px 0;
-    line-height: 1.5;
+    line-height: 1;
     color: var(--text-primary) !important;
+    
+    .bio-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      
+      .bio-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        transition: filter 0.3s ease;
+      }
+    }
   }
 }
 
@@ -1188,6 +1215,13 @@ footer {
     .icon {
       width: 16px;
       margin-right: 8px;
+    }
+    
+    .detail-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      transition: filter 0.3s ease;
     }
     
     a {
@@ -2095,6 +2129,27 @@ body[data-theme="light"] .playlist-header {
 }
 
 /* Dark mode styles */
+body[data-theme="dark"] {
+  .profile-name {
+    &::before {
+      background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+    }
+  }
+  
+  /* Invertir colores de iconos en tema oscuro, excepto colombia y gmail */
+  .bio-icon {
+    filter: invert(100%);
+  }
+  
+  .detail-icon {
+    filter: invert(100%);
+    
+    &.detail-icon-no-invert {
+      filter: none; /* No invertir colombia y gmail */
+    }
+  }
+}
+
 .theme-toggle-switch.dark {
   .theme-toggle-track-light {
     opacity: 0;
