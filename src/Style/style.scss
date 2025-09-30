@@ -1714,20 +1714,20 @@ footer {
       justify-content: center;
       transition: all 0.3s ease;
       
-      /* Estilos para modo oscuro (por defecto) */
-      background: #1e3a8a;
-      border: 1px solid #1e40af;
-      color: white;
+      /* Degradado azul para modo oscuro */
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%) !important;
+      border: 1px solid #1e40af !important;
+      color: white !important;
       box-shadow: 
-        0 4px 12px rgba(59, 130, 246, 0.4),
-        0 0 20px rgba(59, 130, 246, 0.2);
+        0 4px 12px rgba(30, 58, 138, 0.4),
+        0 0 20px rgba(30, 58, 138, 0.2);
       
       &:hover {
-        background: #1d4ed8;
+        background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #1d4ed8 100%) !important;
         transform: scale(1.1);
         box-shadow: 
-          0 6px 20px rgba(59, 130, 246, 0.6),
-          0 0 30px rgba(59, 130, 246, 0.4);
+          0 6px 20px rgba(30, 58, 138, 0.6),
+          0 0 30px rgba(30, 58, 138, 0.4);
       }
       
       &:active {
@@ -1771,20 +1771,20 @@ body[data-theme="light"] .playlist-header {
   }
   
   .playlist-nav .nav-btn {
-    background: transparent;
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    background: linear-gradient(135deg, #4c80df 0%, #2563eb 50%, #4c80df 100%) !important;
+    border: 2px solid #2563eb !important;
+    color: white !important;
     box-shadow: 
-      0 4px 12px rgba(37, 99, 235, 0.3),
-      0 0 15px rgba(37, 99, 235, 0.2);
+      0 4px 12px rgba(76, 128, 223, 0.4),
+      0 0 15px rgba(76, 128, 223, 0.2);
     
     &:hover {
-      background: #2563eb;
-      color: white;
+      background: linear-gradient(135deg, #3b71d4 0%, #1d4ed8 50%, #3b71d4 100%) !important;
+      color: white !important;
       transform: scale(1.1);
       box-shadow: 
-        0 6px 20px rgba(37, 99, 235, 0.5),
-        0 0 25px rgba(37, 99, 235, 0.3);
+        0 6px 20px rgba(76, 128, 223, 0.6),
+        0 0 25px rgba(76, 128, 223, 0.4);
     }
   }
 }
@@ -1850,20 +1850,20 @@ body[data-theme="light"] .playlist-header {
       justify-content: center;
       transition: all 0.3s ease;
       
-      /* Estilos para modo oscuro (por defecto) */
-      background: #1e3a8a;
-      border: 1px solid #1e40af;
-      color: white;
+      /* Degradado azul para modo oscuro */
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%) !important;
+      border: 1px solid #1e40af !important;
+      color: white !important;
       box-shadow: 
-        0 4px 12px rgba(59, 130, 246, 0.4),
-        0 0 20px rgba(59, 130, 246, 0.2);
+        0 4px 12px rgba(30, 58, 138, 0.4),
+        0 0 20px rgba(30, 58, 138, 0.2);
       
       &:hover {
-        background: #1d4ed8;
+        background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #1d4ed8 100%) !important;
         transform: scale(1.1);
         box-shadow: 
-          0 6px 20px rgba(59, 130, 246, 0.6),
-          0 0 30px rgba(59, 130, 246, 0.4);
+          0 6px 20px rgba(30, 58, 138, 0.6),
+          0 0 30px rgba(30, 58, 138, 0.4);
       }
       
       &:active {
@@ -1995,20 +1995,20 @@ body[data-theme="light"] .certificates-header {
   }
   
   .certificates-nav .nav-btn {
-    background: transparent;
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    background: linear-gradient(135deg, #4c80df 0%, #2563eb 50%, #4c80df 100%) !important;
+    border: 2px solid #2563eb !important;
+    color: white !important;
     box-shadow: 
-      0 4px 12px rgba(37, 99, 235, 0.3),
-      0 0 15px rgba(37, 99, 235, 0.2);
+      0 4px 12px rgba(76, 128, 223, 0.4),
+      0 0 15px rgba(76, 128, 223, 0.2);
     
     &:hover {
-      background: #2563eb;
-      color: white;
+      background: linear-gradient(135deg, #3b71d4 0%, #1d4ed8 50%, #3b71d4 100%) !important;
+      color: white !important;
       transform: scale(1.1);
       box-shadow: 
-        0 6px 20px rgba(37, 99, 235, 0.5),
-        0 0 25px rgba(37, 99, 235, 0.3);
+        0 6px 20px rgba(76, 128, 223, 0.6),
+        0 0 25px rgba(76, 128, 223, 0.4);
     }
   }
 }
@@ -2495,4 +2495,71 @@ body[data-theme="dark"] {
 /* Theme Toggle Button (removed from fixed position) */
 .theme-toggle {
   display: none; /* Hide the old floating button */
+}
+
+/* Scroll to Top Button */
+button.scroll-to-top {
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  width: 60px !important;
+  height: 60px !important;
+  border: none !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 9999 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 20px rgba(76, 128, 223, 0.4) !important;
+  
+  /* Degradado azul del header para modo claro */
+  background: linear-gradient(135deg, #4c80df 0%, #2563eb 50%, #4c80df 100%) !important;
+  
+  &:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 25px rgba(76, 128, 223, 0.6) !important;
+    background: linear-gradient(135deg, #3b71d4 0%, #1d4ed8 50%, #3b71d4 100%) !important;
+    opacity: 1 !important; /* Override global button hover opacity */
+  }
+  
+  &:active {
+    transform: scale(0.95) !important;
+  }
+  
+  svg {
+    transition: transform 0.2s ease;
+  }
+  
+  &:hover svg {
+    transform: translateY(-2px);
+  }
+}
+
+/* Scroll to Top Button - Dark Theme */
+button.scroll-to-top.dark {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%) !important;
+  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.4) !important;
+  
+  &:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #1d4ed8 100%) !important;
+    box-shadow: 0 6px 25px rgba(30, 58, 138, 0.6) !important;
+    opacity: 1 !important; /* Override global button hover opacity */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

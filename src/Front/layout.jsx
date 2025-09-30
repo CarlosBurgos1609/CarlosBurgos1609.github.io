@@ -6,6 +6,7 @@ import menu from './../img/menu.png'
 
 const Layout = () => {
     const [theme, setTheme] = useState('light');
+    const [showScrollTop, setShowScrollTop] = useState(false);
 
     useEffect(() => {
         // Detectar preferencia del sistema
@@ -30,6 +31,20 @@ const Layout = () => {
         return () => mediaQuery.removeEventListener('change', handleChange);
     }, []);
 
+    // Effect para manejar el botón de scroll to top
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowScrollTop(true);
+            } else {
+                setShowScrollTop(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const toggleTheme = () => {
         const newTheme = theme === 'light' ? 'dark' : 'light';
         setTheme(newTheme);
@@ -46,6 +61,14 @@ const Layout = () => {
                 block: 'start'
             });
         }
+    };
+
+    // Función para scroll to top
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     };
 
     return <div> 
@@ -136,6 +159,28 @@ const Layout = () => {
       <p>cab</p>
     </div>
         <Outlet />
+
+        {/* Scroll to Top Button */}
+        {showScrollTop && (
+            <button 
+                className={`scroll-to-top ${theme}`}
+                onClick={scrollToTop}
+                aria-label="Scroll to top"
+            >
+                <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="white" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                >
+                    <polyline points="18,15 12,9 6,15"></polyline>
+                </svg>
+            </button>
+        )}
 
         <footer>
             <div>
