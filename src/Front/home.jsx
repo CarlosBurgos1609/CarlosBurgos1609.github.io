@@ -281,7 +281,13 @@ function Home() {
               <div className="spotify-content">
                 <div className="spotify-now-playing">
                   <a href="https://open.spotify.com/user/yw3aqvvd0zb5rsjn8wz0kez0j" target="_blank" rel="noreferrer">
-                    <img src="https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" />
+                    <img 
+                      src={currentTheme === 'dark' 
+                        ? "https://novatorem-sage-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff"
+                        : "https://novatorem-sage-one.vercel.app/api/spotify?background_color=ffffff&border_color=000000"
+                      } 
+                      alt="Spotify Now Playing" 
+                    />
                   </a>
                 </div>
                 <div className="spotify-playlists-preview">
