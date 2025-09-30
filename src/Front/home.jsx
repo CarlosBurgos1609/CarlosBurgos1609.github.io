@@ -3,12 +3,9 @@ import './../Style/style.scss';
 import profileImage from './../img/my profile/profile.png';
 import perfilImage from './../img/perfil.png';
 import spotify from './../img/logos/spotify.png';
-import youtube from './../img/logos/youtube.png';
 import youtubemusic from './../img/logos/youtube-music.png';
 import profileYoutubeDark from './../img/my profile/profileYoutubeDark.png';
 import profileYoutubeLight from './../img/my profile/profileYoutubeLight.png';
-import PlayLists from './playlists';
-// Import icons
 import ingeIcon from './../img/icons/inge.png';
 import universityIcon from './../img/icons/university.png';
 import fullstakIcon from './../img/icons/fullstak.png';
