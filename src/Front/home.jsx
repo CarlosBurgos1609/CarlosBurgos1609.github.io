@@ -415,7 +415,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="youtube-button">
-                  <a href="https://carlosburgos1609.github.io/build/#/playlists">
+                  <a href="https://www.youtube.com/@solracb/playlists" target="_blank" rel="noreferrer">
                     <button className="view-all-playlists">View all YouTube playlists →</button>
                   </a>
                 </div>
