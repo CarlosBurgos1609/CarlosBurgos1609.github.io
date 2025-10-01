@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import './../Style/style.scss';
 import profileImage from './../img/my profile/profile.png';
 import perfilImage from './../img/perfil.png';
@@ -25,9 +25,49 @@ import senaLogo from './../img/logos/sena.png';
 
 function Home() {
   const [currentTheme, setCurrentTheme] = useState('light');
+  const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
+  const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  
+  // Touch states for certificate slider
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
-  // YouTube playlists data
-  const youtubePlaylists = [
+  // Preload all certificate images to prevent reload issues
+  useEffect(() => {
+    const preloadImages = async () => {
+      const imagePromises = certificates.map((cert) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = resolve;
+          img.onerror = reject;
+          img.src = cert.certificate;
+        });
+      });
+
+      const logoPromises = certificates.map((cert) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = resolve;
+          img.onerror = reject;
+          img.src = cert.logo;
+        });
+      });
+
+      try {
+        await Promise.all([...imagePromises, ...logoPromises]);
+        setImagesLoaded(true);
+      } catch (error) {
+        console.warn('Some images failed to preload:', error);
+        setImagesLoaded(true); // Continue anyway
+      }
+    };
+
+    preloadImages();
+  }, []);
+
+  // YouTube playlists data - memoized to prevent recreating
+  const youtubePlaylists = useMemo(() => [
     {
       id: 1,
       title: "Rock en Inglés",
@@ -58,12 +98,10 @@ function Home() {
       title: "Salsa",
       embedUrl: "https://www.youtube.com/embed/videoseries?si=10NvCONmcUEtNdl_&amp;list=PLv8lOsaMAfyYkyf5QnXUoBC_JO-DwycvJ"
     }
-  ];
+  ], []);
 
-  const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
-
-  // Certificates data
-  const certificates = [
+  // Certificates data - memoized to prevent recreating
+  const certificates = useMemo(() => [
     {
       id: 1,
       title: "RataType Typing Certification",
@@ -88,12 +126,78 @@ function Home() {
       certificate: senaCert,
       description: "Certificación técnica en desarrollo de software"
     }
-  ];
+  ], []);
 
-  const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
+  // Certificate navigation functions
+  const nextCertificate = useCallback(() => {
+    setCurrentCertificateIndex((prev) => 
+      prev === certificates.length - 1 ? 0 : prev + 1
+    );
+  }, [certificates.length]);
 
-  // Component for YouTube playlist slider
-  const YouTubePlaylistSlider = () => {
+  const prevCertificate = useCallback(() => {
+    setCurrentCertificateIndex((prev) => 
+      prev === 0 ? certificates.length - 1 : prev - 1
+    );
+  }, [certificates.length]);
+
+  // Touch handlers for swipe functionality
+  const handleTouchStart = useCallback((e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchMove = useCallback((e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextCertificate();
+    }
+    if (isRightSwipe) {
+      prevCertificate();
+    }
+  }, [touchStart, touchEnd, nextCertificate, prevCertificate]);
+
+  // Optimized image component with loading state
+  const CertificateImage = useCallback(({ src, alt, className }) => (
+    <img 
+      src={src} 
+      alt={alt} 
+      className={className}
+      loading="lazy"
+      style={{ 
+        opacity: imagesLoaded ? 1 : 0.5,
+        transition: 'opacity 0.3s ease'
+      }}
+      onLoad={(e) => {
+        e.target.style.opacity = 1;
+      }}
+    />
+  ), [imagesLoaded]);
+
+  // Auto-scroll for mobile - only when images are loaded
+  useEffect(() => {
+    if (!imagesLoaded) return;
+    
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      const interval = setInterval(() => {
+        nextCertificate();
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [currentCertificateIndex, imagesLoaded, nextCertificate]);
+
+  // Component for YouTube playlist slider - optimized with useCallback
+  const YouTubePlaylistSlider = useCallback(() => {
     const currentPlaylist = youtubePlaylists[currentPlaylistIndex];
     
     const nextPlaylist = () => {
@@ -122,6 +226,7 @@ function Home() {
         </div>
         <div className="playlist-content">
           <iframe 
+            key={currentPlaylist.id} // Add key to prevent unnecessary reloads
             width="100%" 
             height="300" 
             src={currentPlaylist.embedUrl}
@@ -134,61 +239,10 @@ function Home() {
         </div>
       </div>
     );
-  };
+  }, [currentPlaylistIndex, youtubePlaylists]);
 
-  // Component for Certificates slider
-  const CertificatesSlider = () => {
-    const [touchStart, setTouchStart] = useState(null);
-    const [touchEnd, setTouchEnd] = useState(null);
-
-    const nextCertificate = () => {
-      setCurrentCertificateIndex((prev) => 
-        prev === certificates.length - 1 ? 0 : prev + 1
-      );
-    };
-
-    const prevCertificate = () => {
-      setCurrentCertificateIndex((prev) => 
-        prev === 0 ? certificates.length - 1 : prev - 1
-      );
-    };
-
-    // Auto-scroll for mobile
-    useEffect(() => {
-      const isMobile = window.innerWidth <= 768;
-      if (isMobile) {
-        const interval = setInterval(() => {
-          nextCertificate();
-        }, 3000);
-        return () => clearInterval(interval);
-      }
-    }, [currentCertificateIndex]);
-
-    // Touch handlers for swipe functionality
-    const handleTouchStart = (e) => {
-      setTouchEnd(null);
-      setTouchStart(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchMove = (e) => {
-      setTouchEnd(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchEnd = () => {
-      if (!touchStart || !touchEnd) return;
-      
-      const distance = touchStart - touchEnd;
-      const isLeftSwipe = distance > 50;
-      const isRightSwipe = distance < -50;
-
-      if (isLeftSwipe) {
-        nextCertificate();
-      }
-      if (isRightSwipe) {
-        prevCertificate();
-      }
-    };
-
+  // Component for Certificates slider - simplified without internal hooks
+  const CertificatesSlider = useCallback(() => {
     return (
       <div className="certificates-slider">
         <div className="certificates-header">
@@ -207,7 +261,11 @@ function Home() {
             {certificates.map((cert) => (
               <div key={cert.id} className="certificate-card">
                 <div className="certificate-header">
-                  <img src={cert.logo} alt={cert.institution} className="certificate-logo" />
+                  <CertificateImage 
+                    src={cert.logo} 
+                    alt={cert.institution} 
+                    className="certificate-logo" 
+                  />
                   <div className="certificate-info">
                     <h4>{cert.title}</h4>
                     <p>{cert.institution}</p>
@@ -215,7 +273,10 @@ function Home() {
                   </div>
                 </div>
                 <div className="certificate-image">
-                  <img src={cert.certificate} alt={cert.title} />
+                  <CertificateImage 
+                    src={cert.certificate} 
+                    alt={cert.title} 
+                  />
                 </div>
               </div>
             ))}
@@ -230,7 +291,11 @@ function Home() {
           >
             <div className="certificate-card">
               <div className="certificate-header">
-                <img src={certificates[currentCertificateIndex].logo} alt={certificates[currentCertificateIndex].institution} className="certificate-logo" />
+                <CertificateImage 
+                  src={certificates[currentCertificateIndex].logo} 
+                  alt={certificates[currentCertificateIndex].institution} 
+                  className="certificate-logo" 
+                />
                 <div className="certificate-info">
                   <h4>{certificates[currentCertificateIndex].title}</h4>
                   <p>{certificates[currentCertificateIndex].institution}</p>
@@ -238,14 +303,17 @@ function Home() {
                 </div>
               </div>
               <div className="certificate-image">
-                <img src={certificates[currentCertificateIndex].certificate} alt={certificates[currentCertificateIndex].title} />
+                <CertificateImage 
+                  src={certificates[currentCertificateIndex].certificate} 
+                  alt={certificates[currentCertificateIndex].title} 
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     );
-  };
+  }, [currentCertificateIndex, certificates, imagesLoaded, nextCertificate, prevCertificate, handleTouchStart, handleTouchMove, handleTouchEnd, CertificateImage]);
 
   useEffect(() => {
     // Detectar el tema actual del body
@@ -272,8 +340,27 @@ function Home() {
       attributeFilter: ['data-theme']
     });
 
+    // Handle external service errors gracefully
+    const originalError = console.error;
+    console.error = (...args) => {
+      // Suppress known external service errors that don't affect functionality
+      const message = args.join(' ');
+      if (message.includes('play.google.com') || 
+          message.includes('401') || 
+          message.includes('Unauthorized')) {
+        // Log silently or handle differently
+        console.warn('External service error (suppressed):', message);
+        return;
+      }
+      // Call original console.error for other errors
+      originalError.apply(console, args);
+    };
+
     // Cleanup
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      console.error = originalError; // Restore original console.error
+    };
   }, []);
 
   return (
@@ -594,7 +681,15 @@ function Home() {
                 🏆 Mis Certificaciones 🏆
               </h2>
               <div className="certificates-content">
-                <CertificatesSlider />
+                {!imagesLoaded && (
+                  <div className="loading-state">
+                    <div className="loading-spinner"></div>
+                    <p>Cargando certificados...</p>
+                  </div>
+                )}
+                <div style={{ opacity: imagesLoaded ? 1 : 0.3, transition: 'opacity 0.5s ease' }}>
+                  <CertificatesSlider />
+                </div>
               </div>
             </div>
           </div>
