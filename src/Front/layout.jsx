@@ -61,6 +61,11 @@ const Layout = () => {
                 block: 'start'
             });
         }
+        // Cerrar el menú móvil después de hacer clic
+        const menuCheckbox = document.getElementById('menu');
+        if (menuCheckbox) {
+            menuCheckbox.checked = false;
+        }
     };
 
     // Función para scroll to top
@@ -75,7 +80,7 @@ const Layout = () => {
         <header class="header" >
         <div class="menu container ">
             <div class="logo">
-                <a href="index.html">
+                <a href="https://carlosburgos1609.github.io/build">
                     <img src={Mylogo} className="App-logo" alt="logo" />
                 </a>
             </div>
