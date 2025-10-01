@@ -16,7 +16,7 @@ $color-light: #000;
   --text-secondary: #656d76;
   --border-color: #d0d7de;
   --accent-color: #0969da;
-  --button-bg: #1f883d;
+  --button-bg: #1DB954;
   --button-text: #ffffff;
   --shadow: rgba(0, 0, 0, 0.1);
 }
@@ -31,7 +31,7 @@ body[data-theme="dark"],
   --text-secondary: #7d8590;
   --border-color: #30363d;
   --accent-color: #2f81f7;
-  --button-bg: #238636;
+  --button-bg: #1DB954;
   --button-text: #ffffff;
   --shadow: rgba(255, 255, 255, 0.1);
 }
@@ -2093,8 +2093,8 @@ body[data-theme="light"] .certificates-header {
   margin-top: 16px; /* Espaciado desde los contenedores de arriba */
   
   .view-all-playlists {
-    background: #FF0000 !important; /* Color rojo de YouTube */
-    color: white !important;
+    background: transparent !important; /* Color de fondo blanco */
+    color: #FF0000 !important;
     border: 1px solid #FF0000 !important;
     border-radius: 6px;
     padding: 12px 24px; /* Más padding para que se vea mejor como botón independiente */
@@ -2104,7 +2104,8 @@ body[data-theme="light"] .certificates-header {
     transition: all 0.2s;
     
     &:hover {
-      background: #CC0000 !important;
+      background: transparent !important;
+      color: white !important;
       transform: scale(1.05);
     }
   }
