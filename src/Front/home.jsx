@@ -27,11 +27,16 @@ function Home() {
   const [currentTheme, setCurrentTheme] = useState('light');
   const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
   const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
+  const [currentSpotifyIndex, setCurrentSpotifyIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   
   // Touch states for certificate slider
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  
+  // Touch states for spotify slider
+  const [spotifyTouchStart, setSpotifyTouchStart] = useState(null);
+  const [spotifyTouchEnd, setSpotifyTouchEnd] = useState(null);
 
   // Preload all certificate images to prevent reload issues
   useEffect(() => {
@@ -128,6 +133,118 @@ function Home() {
     }
   ], []);
 
+  // Spotify playlists data - memoized to prevent recreating
+  const spotifyPlaylists = useMemo(() => [
+    {
+      id: 1,
+      title: "Rock 80 y 90",
+      embedUrl: "https://open.spotify.com/embed/playlist/6KERsvpYzzhISMRnJz77xh?utm_source=generator",
+      genre: "Rock"
+    },
+    {
+      id: 2,
+      title: "Salsa",
+      embedUrl: "https://open.spotify.com/embed/playlist/7ARdbqV0W6SQSYyJ0pH3ZY?utm_source=generator",
+      genre: "Latina"
+    },
+    {
+      id: 3,
+      title: "Trap Argentino",
+      embedUrl: "https://open.spotify.com/embed/playlist/4lRMQOJAUwlnPN0u6vltCa?utm_source=generator",
+      genre: "Urbano"
+    },
+    {
+      id: 4,
+      title: "Pop Latino",
+      embedUrl: "https://open.spotify.com/embed/playlist/6F2QF1tMHv6U9B8QMn1pbR?utm_source=generator",
+      genre: "Pop"
+    },
+    {
+      id: 5,
+      title: "Cumbia",
+      embedUrl: "https://open.spotify.com/embed/playlist/3wdr8eEILMkHJDXNu12Y2N?utm_source=generator",
+      genre: "Latina"
+    },
+    {
+      id: 6,
+      title: "Pop en Español",
+      embedUrl: "https://open.spotify.com/embed/playlist/40BbhGPEcklGp49QrSlFfZ?utm_source=generator",
+      genre: "Pop"
+    },
+    {
+      id: 7,
+      title: "Corridos",
+      embedUrl: "https://open.spotify.com/embed/playlist/2fYtfgz85qBaUfP10lnZYt?utm_source=generator",
+      genre: "Regional"
+    },
+    {
+      id: 8,
+      title: "Merengue",
+      embedUrl: "https://open.spotify.com/embed/playlist/10nfX6VXflrOquAKmA1bMz?utm_source=generator",
+      genre: "Latina"
+    },
+    {
+      id: 9,
+      title: "Pop Rock",
+      embedUrl: "https://open.spotify.com/embed/playlist/6Zyv4Tzir19kAyHXLYgziF?utm_source=generator",
+      genre: "Rock"
+    },
+    {
+      id: 10,
+      title: "Bachata",
+      embedUrl: "https://open.spotify.com/embed/playlist/12WRhlSnurKbWGD22hftSB?utm_source=generator",
+      genre: "Latina"
+    },
+    {
+      id: 11,
+      title: "Reguetón",
+      embedUrl: "https://open.spotify.com/embed/playlist/0j3spPr5IxN5J7k5CVDhis?utm_source=generator",
+      genre: "Urbano"
+    },
+    {
+      id: 12,
+      title: "Electrónica",
+      embedUrl: "https://open.spotify.com/embed/playlist/55g6nZwjigkdi3jIeVXBo9?utm_source=generator",
+      genre: "Electrónica"
+    },
+    {
+      id: 13,
+      title: "Hip Hop",
+      embedUrl: "https://open.spotify.com/embed/playlist/7qOs3OWDkor8Wk3eBeXpHb?utm_source=generator",
+      genre: "Urbano"
+    },
+    {
+      id: 14,
+      title: "Rock en Español",
+      embedUrl: "https://open.spotify.com/embed/playlist/3GWu39s0U4TTdGv7MpzC5P?utm_source=generator",
+      genre: "Rock"
+    },
+    {
+      id: 15,
+      title: "POP",
+      embedUrl: "https://open.spotify.com/embed/playlist/73C5mk3LRQtxzZ2dTf22ic?utm_source=generator",
+      genre: "Pop"
+    },
+    {
+      id: 16,
+      title: "Baladas",
+      embedUrl: "https://open.spotify.com/embed/playlist/6ZDDxuQj8VQWAluDNjHp1U?utm_source=generator",
+      genre: "Romántica"
+    },
+    {
+      id: 17,
+      title: "Heavy Metal",
+      embedUrl: "https://open.spotify.com/embed/playlist/2NHlst7h5g1wT6TY31qXug?utm_source=generator",
+      genre: "Metal"
+    },
+    {
+      id: 18,
+      title: "Reggae",
+      embedUrl: "https://open.spotify.com/embed/playlist/4Hs6UxVqxNgypRkKxaYP6c?utm_source=generator",
+      genre: "Reggae"
+    }
+  ], []);
+
   // Certificate navigation functions
   const nextCertificate = useCallback(() => {
     setCurrentCertificateIndex((prev) => 
@@ -140,6 +257,19 @@ function Home() {
       prev === 0 ? certificates.length - 1 : prev - 1
     );
   }, [certificates.length]);
+
+  // Spotify playlist navigation functions
+  const nextSpotifyPlaylist = useCallback(() => {
+    setCurrentSpotifyIndex((prev) => 
+      prev === spotifyPlaylists.length - 1 ? 0 : prev + 1
+    );
+  }, [spotifyPlaylists.length]);
+
+  const prevSpotifyPlaylist = useCallback(() => {
+    setCurrentSpotifyIndex((prev) => 
+      prev === 0 ? spotifyPlaylists.length - 1 : prev - 1
+    );
+  }, [spotifyPlaylists.length]);
 
   // Touch handlers for swipe functionality
   const handleTouchStart = useCallback((e) => {
@@ -165,6 +295,31 @@ function Home() {
       prevCertificate();
     }
   }, [touchStart, touchEnd, nextCertificate, prevCertificate]);
+
+  // Touch handlers for Spotify slider
+  const handleSpotifyTouchStart = useCallback((e) => {
+    setSpotifyTouchEnd(null);
+    setSpotifyTouchStart(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleSpotifyTouchMove = useCallback((e) => {
+    setSpotifyTouchEnd(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleSpotifyTouchEnd = useCallback(() => {
+    if (!spotifyTouchStart || !spotifyTouchEnd) return;
+    
+    const distance = spotifyTouchStart - spotifyTouchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextSpotifyPlaylist();
+    }
+    if (isRightSwipe) {
+      prevSpotifyPlaylist();
+    }
+  }, [spotifyTouchStart, spotifyTouchEnd, nextSpotifyPlaylist, prevSpotifyPlaylist]);
 
   // Optimized image component with loading state
   const CertificateImage = useCallback(({ src, alt, className }) => (
@@ -195,6 +350,17 @@ function Home() {
       return () => clearInterval(interval);
     }
   }, [currentCertificateIndex, imagesLoaded, nextCertificate]);
+
+  // Auto-scroll for Spotify playlists on mobile
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      const interval = setInterval(() => {
+        nextSpotifyPlaylist();
+      }, 4000); // Slightly longer interval for Spotify
+      return () => clearInterval(interval);
+    }
+  }, [currentSpotifyIndex, nextSpotifyPlaylist]);
 
   // Component for YouTube playlist slider - optimized with useCallback
   const YouTubePlaylistSlider = useCallback(() => {
@@ -314,6 +480,90 @@ function Home() {
       </div>
     );
   }, [currentCertificateIndex, certificates, imagesLoaded, nextCertificate, prevCertificate, handleTouchStart, handleTouchMove, handleTouchEnd, CertificateImage]);
+
+  // Component for Spotify Playlists slider
+  const SpotifyPlaylistsSlider = useCallback(() => {
+    // Get current playlists based on index - 2 for desktop, 1 for mobile
+    const getCurrentPlaylists = () => {
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile) {
+        return [spotifyPlaylists[currentSpotifyIndex]];
+      } else {
+        const firstIndex = currentSpotifyIndex;
+        const secondIndex = (currentSpotifyIndex + 1) % spotifyPlaylists.length;
+        return [spotifyPlaylists[firstIndex], spotifyPlaylists[secondIndex]];
+      }
+    };
+
+    const currentPlaylists = getCurrentPlaylists();
+
+    return (
+      <div className="spotify-playlists-slider">
+        <div className="spotify-playlists-header">
+          <h3>Mis Playlists</h3>
+          <div className="spotify-playlists-nav">
+            <button onClick={prevSpotifyPlaylist} className="nav-btn">‹</button>
+            <span className="spotify-playlists-counter">
+              {currentSpotifyIndex + 1} / {spotifyPlaylists.length}
+            </span>
+            <button onClick={nextSpotifyPlaylist} className="nav-btn">›</button>
+          </div>
+        </div>
+        <div className="spotify-playlists-content">
+          {/* Desktop view - show 2 playlists per row */}
+          <div className="spotify-playlists-desktop">
+            <div className="spotify-playlists-row">
+              {currentPlaylists.map((playlist) => (
+                <div key={playlist.id} className="spotify-playlist-card">
+                  <div className="spotify-playlist-header">
+                    <h4>{playlist.title}</h4>
+                    <span className="playlist-genre">{playlist.genre}</span>
+                  </div>
+                  <div className="spotify-playlist-iframe">
+                    <iframe 
+                      src={playlist.embedUrl}
+                      width="100%" 
+                      height="152" 
+                      frameBorder="0" 
+                      allowFullScreen 
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                      loading="lazy">
+                    </iframe>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Mobile view - show current playlist */}
+          <div 
+            className="spotify-playlists-mobile"
+            onTouchStart={handleSpotifyTouchStart}
+            onTouchMove={handleSpotifyTouchMove}
+            onTouchEnd={handleSpotifyTouchEnd}
+          >
+            <div className="spotify-playlist-card">
+              <div className="spotify-playlist-header">
+                <h4>{spotifyPlaylists[currentSpotifyIndex].title}</h4>
+                <span className="playlist-genre">{spotifyPlaylists[currentSpotifyIndex].genre}</span>
+              </div>
+              <div className="spotify-playlist-iframe">
+                <iframe 
+                  src={spotifyPlaylists[currentSpotifyIndex].embedUrl}
+                  width="100%" 
+                  height="152" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }, [currentSpotifyIndex, spotifyPlaylists, nextSpotifyPlaylist, prevSpotifyPlaylist, handleSpotifyTouchStart, handleSpotifyTouchMove, handleSpotifyTouchEnd]);
 
   useEffect(() => {
     // Detectar el tema actual del body
@@ -635,10 +885,12 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="spotify-playlists-preview">
-                  <iframe src="https://open.spotify.com/embed/playlist/5P6n1BNwogBmLXZqIwlk3e?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                  <iframe src="https://open.spotify.com/embed/playlist/7ARdbqV0W6SQSYyJ0pH3ZY?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
+                {/* New Spotify Playlists Slider */}
+                <div className="spotify-playlists-section">
+                  <SpotifyPlaylistsSlider />
                 </div>
+                
                 <div className="spotify-button">
                   <a href="https://carlosburgos1609.github.io/build/#/playlists">
                     <button className="view-all-playlists">View all playlists →</button>
