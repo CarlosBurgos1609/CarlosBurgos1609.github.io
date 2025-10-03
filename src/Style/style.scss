@@ -46,6 +46,9 @@ body {
 /* Smooth scrolling for navigation */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Previene scroll horizontal global */
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Offset for fixed header navigation */
@@ -295,6 +298,10 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden; /* Previene scroll horizontal */
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 .container {
@@ -1200,6 +1207,9 @@ footer {
     color: var(--text-primary) !important;
     position: relative;
     overflow: hidden; /* Evitar que la animación se salga */
+    width: 100%; /* Asegurar ancho completo */
+    max-width: 100%; /* Prevenir desbordamiento */
+    box-sizing: border-box; /* Incluir padding y borders */
     
     /* Efecto metallic - línea blanca para modo claro */
     &::before {
@@ -1210,8 +1220,9 @@ footer {
       width: 100%;
       height: 100%;
       background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
-      animation: metallic-shine 2s infinite;
+      animation: metallic-shine-contained 2s infinite; /* Usar nueva animación contenida */
       z-index: 1;
+      will-change: transform; /* Optimizar performance */
     }
   }
   
@@ -2727,12 +2738,12 @@ button.scroll-to-top {
             .spotify-playlists-row {
                 display: grid;
                 grid-template-columns: 1fr 1fr; /* Volvemos a 2 columnas para PC */
-                gap: 24px; /* Aumentamos el gap de 20px a 24px para mejor espaciado */
+                gap: 20px;
                 
                 .spotify-playlist-card {
                     background: var(--bg-secondary);
                     border-radius: 12px;
-                    padding: 20px; /* Aumentamos el padding de 15px a 20px */
+                    padding: 15px;
                     border: 1px solid var(--border-color);
                     transition: all 0.3s ease;
                     
@@ -2771,7 +2782,7 @@ button.scroll-to-top {
                         iframe {
                             border-radius: 8px;
                             transition: all 0.3s ease;
-                            height: 450px; /* Aumentamos de 350px a 450px para ocupar mejor el espacio */
+                            height: 450px; /* Aumentamos significativamente la altura para que se vea como en las imágenes */
                         }
                     }
                 }
@@ -2815,7 +2826,7 @@ button.scroll-to-top {
                     
                     iframe {
                         border-radius: 8px;
-                        height: 380px; /* Altura aún mayor para móvil para mejor experiencia */
+                        height: 450px; /* Altura aún mayor para móvil para mejor experiencia */
                     }
                 }
             }
@@ -2849,8 +2860,48 @@ button.scroll-to-top {
         }
         
         .spotify-playlists-content {
-            padding: 0 20px; /* Añadir padding al contenido */
+            padding: 0 10px; /* Añadir padding al contenido */
             
+            .spotify-playlists-desktop {
+                display: none;
+            }
+            
+            .spotify-playlists-mobile {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Integration with existing Spotify section
+.spotify-section {
+    .spotify-playlists-section {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+}
+// Mobile responsive
+@media (max-width: 768px) {
+    .spotify-playlists-slider {
+        .spotify-playlists-header {
+            .spotify-playlists-nav {
+                gap: 10px;
+                
+                .nav-btn {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 16px;
+                }
+                
+                .spotify-playlists-counter {
+                    font-size: 12px;
+                    min-width: 50px;
+                }
+            }
+        }
+        
+        .spotify-playlists-content {
             .spotify-playlists-desktop {
                 display: none;
             }
