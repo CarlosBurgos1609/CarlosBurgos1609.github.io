@@ -351,16 +351,16 @@ function Home() {
     }
   }, [currentCertificateIndex, imagesLoaded, nextCertificate]);
 
-  // Auto-scroll for Spotify playlists on mobile
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 768;
-    if (isMobile) {
-      const interval = setInterval(() => {
-        nextSpotifyPlaylist();
-      }, 4000); // Slightly longer interval for Spotify
-      return () => clearInterval(interval);
-    }
-  }, [currentSpotifyIndex, nextSpotifyPlaylist]);
+  // Auto-scroll for Spotify playlists on mobile - DISABLED
+  // useEffect(() => {
+  //   const isMobile = window.innerWidth <= 768;
+  //   if (isMobile) {
+  //     const interval = setInterval(() => {
+  //       nextSpotifyPlaylist();
+  //     }, 4000); // Slightly longer interval for Spotify
+  //     return () => clearInterval(interval);
+  //   }
+  // }, [currentSpotifyIndex, nextSpotifyPlaylist]);
 
   // Component for YouTube playlist slider - optimized with useCallback
   const YouTubePlaylistSlider = useCallback(() => {
@@ -483,12 +483,13 @@ function Home() {
 
   // Component for Spotify Playlists slider
   const SpotifyPlaylistsSlider = useCallback(() => {
-    // Get current playlists based on index - 2 for desktop, 1 for mobile
+    // Get current playlists - 2 for desktop, 1 for mobile
     const getCurrentPlaylists = () => {
-      const isMobile = window.innerWidth <= 768;
+      const isMobile = window.innerWidth <= 380; // Cambiado a 380px para móvil
       if (isMobile) {
         return [spotifyPlaylists[currentSpotifyIndex]];
       } else {
+        // Para PC: mostrar 2 playlists
         const firstIndex = currentSpotifyIndex;
         const secondIndex = (currentSpotifyIndex + 1) % spotifyPlaylists.length;
         return [spotifyPlaylists[firstIndex], spotifyPlaylists[secondIndex]];
@@ -523,7 +524,7 @@ function Home() {
                     <iframe 
                       src={playlist.embedUrl}
                       width="100%" 
-                      height="152" 
+                      height="450" 
                       frameBorder="0" 
                       allowFullScreen 
                       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -551,7 +552,7 @@ function Home() {
                 <iframe 
                   src={spotifyPlaylists[currentSpotifyIndex].embedUrl}
                   width="100%" 
-                  height="152" 
+                  height="380" 
                   frameBorder="0" 
                   allowFullScreen 
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

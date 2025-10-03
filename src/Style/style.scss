@@ -2726,13 +2726,13 @@ button.scroll-to-top {
             
             .spotify-playlists-row {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
+                grid-template-columns: 1fr 1fr; /* Volvemos a 2 columnas para PC */
+                gap: 24px; /* Aumentamos el gap de 20px a 24px para mejor espaciado */
                 
                 .spotify-playlist-card {
                     background: var(--bg-secondary);
                     border-radius: 12px;
-                    padding: 15px;
+                    padding: 20px; /* Aumentamos el padding de 15px a 20px */
                     border: 1px solid var(--border-color);
                     transition: all 0.3s ease;
                     
@@ -2756,6 +2756,7 @@ button.scroll-to-top {
                             color: var(--accent-color);
                             font-size: 0.9rem;
                             font-weight: 500;
+                            height: auto;
                             background: rgba(0, 150, 255, 0.1);
                             padding: 2px 8px;
                             border-radius: 12px;
@@ -2770,6 +2771,7 @@ button.scroll-to-top {
                         iframe {
                             border-radius: 8px;
                             transition: all 0.3s ease;
+                            height: 450px; /* Aumentamos de 350px a 450px para ocupar mejor el espacio */
                         }
                     }
                 }
@@ -2813,6 +2815,7 @@ button.scroll-to-top {
                     
                     iframe {
                         border-radius: 8px;
+                        height: 380px; /* Altura aún mayor para móvil para mejor experiencia */
                     }
                 }
             }
@@ -2820,10 +2823,15 @@ button.scroll-to-top {
     }
 }
 
-// Mobile responsive
-@media (max-width: 768px) {
+// Mobile responsive - Para pantallas de 380px y menos
+@media (max-width: 380px) {
     .spotify-playlists-slider {
+        width: 100vw; /* Ocupa todo el ancho de la pantalla */
+        margin-left: calc(-50vw + 50%); /* Centra respecto al viewport */
+        
         .spotify-playlists-header {
+            padding: 0 20px; /* Añadir padding para que el header no se pegue a los bordes */
+            
             .spotify-playlists-nav {
                 gap: 10px;
                 
@@ -2841,6 +2849,8 @@ button.scroll-to-top {
         }
         
         .spotify-playlists-content {
+            padding: 0 20px; /* Añadir padding al contenido */
+            
             .spotify-playlists-desktop {
                 display: none;
             }
