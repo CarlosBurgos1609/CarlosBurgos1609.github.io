@@ -662,6 +662,16 @@ function Home() {
                   <span>caburgos.0325@unicesmag.edu.co</span>
                 </div>
               </div>
+              
+              {/* Accounts Section */}
+              <div className="profile-accounts">
+                <h3 className="accounts-subtitle">Cuentas</h3>
+                <div className="accounts-profile-circle">
+                  <a href="https://github.com/CarlosBurgos1609" target="_blank" rel="noreferrer">
+                    <img src={profileImage} alt="Profile Circle" className="circle-profile-image" />
+                  </a>
+                </div>
+              </div>
               <div className="profile-stats">
                 <div className="stat-item">
                   <span className="stat-number">15+</span>

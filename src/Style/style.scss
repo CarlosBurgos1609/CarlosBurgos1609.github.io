@@ -1202,8 +1202,8 @@ footer {
   .profile-name {
     font-size: 26px;
     font-weight: 600;
-    line-height: 1.25;
-    margin: 0 0 4px 0;
+    line-height: 1.1; /* Reducido de 1.25 a 1.1 */
+    margin: 0 0 2px 0; /* Reducido de 4px a 2px */
     color: var(--text-primary) !important;
     position: relative;
     overflow: hidden; /* Evitar que la animación se salga */
@@ -1230,19 +1230,20 @@ footer {
     font-size: 20px;
     font-weight: 300;
     color: var(--text-secondary) !important;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0; /* Reducido de 16px a 8px */
+    line-height: 1.1; /* Añadido para consistencia */
   }
   
   .profile-bio {
     font-size: 16px;
-    margin: 0 0 16px 0;
-    line-height: 1;
+    margin: 0 0 10px 0; /* Reducido de 16px a 10px */
+    line-height: 1.2; /* Reducido de 1 a 1.2 para mejor legibilidad */
     color: var(--text-primary) !important;
     
     .bio-item {
       display: flex;
       align-items: center;
-      margin-bottom: 4px;
+      margin-bottom: 2px; /* Reducido de 4px a 2px */
       
       .bio-icon {
         width: 18px;
@@ -1255,14 +1256,15 @@ footer {
 }
 
 .profile-details {
-  margin-bottom: 16px;
+  margin-bottom: 12px; /* Reducido de 16px a 12px */
   
   .detail-item {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* Reducido de 8px a 6px */
     font-size: 14px;
     color: var(--color-fg-default, #e6edf3);
+    line-height: 1.2; /* Añadido para consistencia */
     
     .icon {
       width: 16px;
@@ -1287,10 +1289,49 @@ footer {
   }
 }
 
+// New accounts section styles
+.profile-accounts {
+  margin-top: 12px; /* Espacio consistente con otros elementos */
+  
+  .accounts-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: var(--text-primary) !important; /* Blanco en oscuro, negro en claro */
+    line-height: 1.2;
+  }
+  
+  .accounts-profile-circle {
+    display: flex;
+    justify-content: left;
+    margin-top: 8px;
+    
+    .circle-profile-image {
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50%;
+      border: 2px solid var(--accent-color);
+      object-fit: cover;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 150, 255, 0.3);
+      }
+      
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
 .profile-stats {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 12px; /* Reducido de 16px a 12px para consistencia */
   
   .stat-item {
     display: flex;
@@ -1301,11 +1342,13 @@ footer {
       font-size: 16px;
       font-weight: 600;
       color: var(--color-fg-default, #e6edf3);
+      line-height: 1.2; /* Añadido para consistencia */
     }
     
     .stat-label {
       font-size: 12px;
       color: var(--color-fg-muted, #7d8590);
+      line-height: 1.2; /* Añadido para consistencia */
     }
   }
 }
