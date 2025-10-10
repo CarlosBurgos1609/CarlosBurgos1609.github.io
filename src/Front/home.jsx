@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo, useCallback } from 'react';
-import './../Style/style.scss';
+import './../Style/style-modular.scss';
 import profileImage from './../img/my profile/profile.png';
 import perfilImage from './../img/perfil.png';
 import spotify from './../img/logos/spotify.png';

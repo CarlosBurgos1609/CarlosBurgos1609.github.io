@@ -1,0 +1,40 @@
+// Variables globales para todos los componentes
+@use '../mixin' as m;
+
+// Backgrounds
+$light: linear-gradient(90deg, rgb(76, 128, 223)0%, #FFFFFF 100%);
+$dark: linear-gradient(90deg, rgb(0, 1, 3)0%, #03093b 100%);
+
+// Colors
+$color-dark: #fff;
+$color-light: #000;
+
+/* Global Theme Variables */
+:root {
+  /* Light theme by default */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --bg-header: linear-gradient(90deg, rgb(76, 128, 223) 0%, #ffffff 100%);
+  --text-primary: #1f2328;
+  --text-secondary: #656d76;
+  --border-color: #d0d7de;
+  --accent-color: #0969da;
+  --button-bg: #1f883d;
+  --button-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme variables */
+body[data-theme="dark"], 
+[data-theme="dark"] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-header: linear-gradient(90deg, #03093b 0%,  #0d1117 100%);
+  --text-primary: #e6edf3;
+  --text-secondary: #7d8590;
+  --border-color: #30363d;
+  --accent-color: #2f81f7;
+  --button-bg: #238636;
+  --button-text: #ffffff;
+  --shadow: rgba(255, 255, 255, 0.1);
+}

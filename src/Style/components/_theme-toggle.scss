@@ -1,0 +1,121 @@
+// Theme Toggle Styles
+@use '../mixin' as m;
+@use './variables' as vars;
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  
+  .theme-toggle-button {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      border-color: var(--accent-color);
+    }
+    
+    &:active {
+      transform: scale(0.95);
+    }
+    
+    .theme-icon {
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+      
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+    
+    // Icon states for different themes
+    .sun-icon {
+      display: var(--sun-display, block);
+    }
+    
+    .moon-icon {
+      display: var(--moon-display, none);
+    }
+  }
+}
+
+// Dark theme overrides
+[data-theme="dark"] {
+  .theme-toggle {
+    .theme-toggle-button {
+      .sun-icon {
+        display: none;
+      }
+      
+      .moon-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+// Light theme overrides
+[data-theme="light"] {
+  .theme-toggle {
+    .theme-toggle-button {
+      .sun-icon {
+        display: block;
+      }
+      
+      .moon-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    
+    .theme-toggle-button {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    
+    .theme-toggle-button {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+// Theme transition animations
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+// Ensure proper stacking above other elements
+.theme-toggle {
+  // Make sure it's above header, modals, etc.
+  z-index: 9999;
+}

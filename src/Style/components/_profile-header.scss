@@ -1,0 +1,246 @@
+// Profile Header Container Styles
+@use '../mixin' as m;
+@use './variables' as vars;
+
+.github-container {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  padding: 20px;
+  margin-top: 18px;
+  transition: all 0.3s ease;
+}
+
+.profile-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.profile-sidebar {
+  flex: 0 0 320px;
+  
+  @media (max-width: 768px) {
+    flex: 1;
+  }
+}
+
+.profile-image-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.profile-image {
+  width: 296px;
+  height: 296px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color) !important;
+  object-fit: cover;
+  
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.profile-info {
+  .profile-name {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 0 2px 0;
+    color: var(--text-primary) !important;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    /* Efecto metallic - línea blanca para modo claro */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+      animation: metallic-shine-contained 2s infinite;
+      z-index: 1;
+      will-change: transform;
+    }
+  }
+  
+  .profile-username {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--text-secondary) !important;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+  }
+  
+  .profile-bio {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    color: var(--text-primary) !important;
+    
+    .bio-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2px;
+      
+      .bio-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        transition: filter 0.3s ease;
+      }
+    }
+  }
+}
+
+.profile-details {
+  margin-bottom: 12px;
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: var(--color-fg-default, #e6edf3);
+    line-height: 1.2;
+    
+    .icon {
+      width: 16px;
+      margin-right: 8px;
+    }
+    
+    .detail-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      transition: filter 0.3s ease;
+    }
+    
+    a {
+      color: var(--color-accent-fg, #2f81f7);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// New accounts section styles
+.profile-accounts {
+  margin-top: 12px;
+  
+  .accounts-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: var(--text-primary) !important;
+    line-height: 1.2;
+  }
+  
+  .accounts-profile-circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    
+    .circle-profile-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-color);
+      object-fit: cover;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 150, 255, 0.3);
+      }
+      
+      @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.profile-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .stat-number {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-fg-default, #e6edf3);
+      line-height: 1.2;
+    }
+    
+    .stat-label {
+      font-size: 12px;
+      color: var(--color-fg-muted, #7d8590);
+      line-height: 1.2;
+    }
+  }
+}
+
+.profile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Dark mode styles */
+body[data-theme="dark"] {
+  .profile-name {
+    &::before {
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+    }
+  }
+  
+  /* Invertir colores de iconos en tema oscuro, excepto colombia y gmail */
+  .bio-icon {
+    filter: invert(1);
+  }
+  
+  .detail-icon {
+    filter: invert(1);
+    
+    &.detail-icon-no-invert {
+      filter: none;
+    }
+  }
+}
+
+/* Animación de brillo metalizado */
+@keyframes metallic-shine-contained {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
