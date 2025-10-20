@@ -1,7 +1,7 @@
 // YouTube Section Styles
 @use '../mixin' as m;
 @use './variables' as vars;
-@use './electric-border' as eb;
+// @use './electric-border' as eb;
 
 .youtube-section {
   background: var(--bg-secondary) !important;
@@ -48,7 +48,7 @@
   border-radius: 12px;
   padding: 12px;
   overflow: visible; // allow neon to render outside
-  @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
+  // @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
 
   .youtube-profile-img {
     display: block;
@@ -73,7 +73,7 @@
   overflow: visible; // allow neon to render outside
   flex: 1 1 auto;
   min-width: 0;
-  @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
+  // @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
 }
 
 .youtube-now-playing {
@@ -254,7 +254,7 @@
           border: 1px solid var(--border-color);
           overflow: visible;
           transition: all 0.3s ease;
-          @include eb.electric-border(#ff0000, 12px, 1px, 0.8); // YouTube red neon
+          // @include eb.electric-border(#ff0000, 12px, 1px, 0.8); // YouTube red neon
           
           &:hover {
             transform: translateY(-5px);
@@ -305,7 +305,7 @@
         padding: 20px;
         border: 1px solid var(--border-color);
         overflow: visible;
-        @include eb.electric-border(#ff0000, 12px, 1px, 0.8);
+        // @include eb.electric-border(#ff0000, 12px, 1px, 0.8);
         
         .youtube-music-playlist-header {
           margin-bottom: 15px;

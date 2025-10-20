@@ -257,7 +257,7 @@
         padding: 20px;
         border: 1px solid var(--border-color);
         overflow: visible;
-        @include eb.electric-border(#1db954, 12px, 1.5px, 0.8);
+        // @include eb.electric-border(#1db954, 12px, 1.5px, 0.8);
 
         .spotify-playlist-header {
           margin-bottom: 15px;
