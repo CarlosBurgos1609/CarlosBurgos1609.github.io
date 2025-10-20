@@ -54,12 +54,20 @@ const Layout = () => {
 
     // Función para navegación suave a secciones
     const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
+        // Si es inicio, ir al tope de la página
+        if (sectionId === 'inicio') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
+        } else {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
         // Cerrar el menú móvil después de hacer clic
         const menuCheckbox = document.getElementById('menu');
