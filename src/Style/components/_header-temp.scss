@@ -38,7 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent !important;
 
     & li {
       position: relative;
@@ -58,20 +57,24 @@
       background: transparent;
       border: 2px solid transparent;
       position: relative;
+      z-index: 1;
       
       // Apply electric border effect - blue in light mode, white in dark mode
       [data-theme="light"] & {
-        @include eb.electric-border(#034a9c, 8px, 2px, 0.8);
+        @include eb.electric-border(#00fffb, 8px, 2px, 0.8);
       }
       
       [data-theme="dark"] & {
         @include eb.electric-border(#ffffff, 8px, 2px, 0.8);
       }
+      
+      // Fix z-index stacking for pseudo-elements
+      &::before,
+      &::after {
+        z-index: -1 !important;
+      }
     }
-@media screen and (max-width: 999px) {
-      background: var(--bg-header) !important;
-  
-}
+
     & ul li img {
       width: 120px;
       border-radius: 120px;
@@ -184,18 +187,19 @@
           text-align: center;
           
           a {
-              display: inline-block;
+            display: inline-block;
             padding: 14px 28px;
-              margin: 5px auto;
+            margin: 5px auto;
             color: var(--text-primary) !important;
             text-decoration: none;
             border-radius: 8px;
             transition: all 0.3s ease;
             text-align: center;
             background: transparent;
-              border: 2px solid transparent;
+            border: 2px solid transparent;
             font-weight: bold;
             position: relative;
+            z-index: 1;
             
             // Apply electric border effect - blue in light mode, white in dark mode
             [data-theme="light"] & {
@@ -204,6 +208,12 @@
             
             [data-theme="dark"] & {
               @include eb.electric-border(#ffffff, 8px, 2px, 0.8);
+            }
+            
+            // Fix z-index stacking for pseudo-elements
+            &::before,
+            &::after {
+              z-index: -1 !important;
             }
           }
         }

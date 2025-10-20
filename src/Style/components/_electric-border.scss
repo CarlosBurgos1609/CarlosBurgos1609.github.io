@@ -18,8 +18,9 @@
 
   // Active interaction states that enable the electrified edge
   &:is(:hover, :focus-visible, .is-active, .active, [data-active='true'], [aria-selected='true']) {
-    // Colorize existing border only when active
-    border-color: $color;
+    // NO solid border line - only electric effects (ray + glow)
+    // border-color: $color; // REMOVED
+    
     // Electrified jagged edge using pseudo-element + SVG displacement
     &::before {
       content: '';
@@ -33,7 +34,7 @@
         0 0 8px rgba($color, 0.75 * $glow-strength),
         0 0 24px rgba($color, 0.45 * $glow-strength);
       pointer-events: none;
-      z-index: 0;
+      z-index: -1;
     }
 
     // Overlay sheen for dramatic effect
@@ -52,7 +53,7 @@
         rgba(255,255,255,0.6)
       );
       pointer-events: none;
-      z-index: 0;
+      z-index: -1;
     }
 
     // Stronger glow on hover/active
