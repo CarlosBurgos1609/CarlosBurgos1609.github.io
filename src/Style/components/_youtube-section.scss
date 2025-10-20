@@ -1,6 +1,7 @@
 // YouTube Section Styles
 @use '../mixin' as m;
 @use './variables' as vars;
+@use './electric-border' as eb;
 
 .youtube-section {
   background: var(--bg-secondary) !important;
@@ -24,6 +25,55 @@
 .youtube-content {
   display: grid;
   gap: 24px;
+}
+
+// Align with JSX structure: youtube-profile-section contains
+// youtube-profile-container and youtube-playlists-container
+.youtube-profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+// Electric border around the YouTube profile avatar container
+.youtube-profile-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px;
+  overflow: visible; // allow neon to render outside
+  @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
+
+  .youtube-profile-img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+// Electric border around the playlists container that wraps the slider
+.youtube-playlists-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px;
+  overflow: visible; // allow neon to render outside
+  flex: 1 1 auto;
+  min-width: 0;
+  @include eb.electric-border(#ff0000, 12px, 1.5px, 0.8);
 }
 
 .youtube-now-playing {
@@ -186,7 +236,7 @@
   
   .youtube-music-playlists-content {
     position: relative;
-    overflow: hidden;
+    overflow: visible; // allow neon to show
     border-radius: 12px;
     
     .youtube-music-playlists-desktop {
@@ -202,12 +252,14 @@
           border-radius: 12px;
           padding: 15px;
           border: 1px solid var(--border-color);
+          overflow: visible;
           transition: all 0.3s ease;
+          @include eb.electric-border(#ff0000, 12px, 1px, 0.8); // YouTube red neon
           
           &:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-color: #ff0000;
+            // Border color handled by electric-border mixin on active
           }
           
           .youtube-music-playlist-header {
@@ -252,6 +304,8 @@
         border-radius: 12px;
         padding: 20px;
         border: 1px solid var(--border-color);
+        overflow: visible;
+        @include eb.electric-border(#ff0000, 12px, 1px, 0.8);
         
         .youtube-music-playlist-header {
           margin-bottom: 15px;

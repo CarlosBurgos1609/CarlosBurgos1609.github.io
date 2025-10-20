@@ -1,6 +1,7 @@
 // Certificates Section Styles
 @use '../mixin' as m;
 @use './variables' as vars;
+@use './electric-border' as eb;
 
 .certificates-section {
   background: var(--bg-secondary) !important;
@@ -85,7 +86,7 @@
   
   .certificates-content {
     position: relative;
-    overflow: hidden;
+    overflow: visible; // allow neon glow
     border-radius: 12px;
     
     .certificates-desktop {
@@ -106,16 +107,17 @@
         background: var(--bg-primary);
         border-radius: 12px;
         border: 1px solid var(--border-color);
-        overflow: hidden;
+        overflow: visible; // show neon and electric edge
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
         height: fit-content;
+        @include eb.electric-border(#ffffff, 12px, 1.5px, 0.8); // Yellow neon like sample
         
         &:hover {
           transform: translateY(-5px);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-          border-color: var(--accent-color);
+          // Border color handled by electric-border mixin on active
         }
         
         .certificate-header {

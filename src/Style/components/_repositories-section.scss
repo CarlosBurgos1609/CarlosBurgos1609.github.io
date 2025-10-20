@@ -1,6 +1,7 @@
 // Repositories Section Styles
 @use '../mixin' as m;
 @use './variables' as vars;
+@use './electric-border' as eb;
 
 .repositories-section {
   background: var(--bg-secondary) !important;
@@ -26,8 +27,19 @@
 .repo-card {
   background: var(--bg-primary) !important;
   border: 1px solid var(--border-color) !important;
-  border-radius: 6px;
+  border-radius: 12px;
   padding: 16px;
+  overflow: visible; // allow neon glow and electric edge outside
+  // Neon border (cyan) subtle by default
+  @include eb.electric-border(#ffffff, 12px, 1.5px, 0.8);
+  
+  // Fallback background aura if component has no explicit child (noop for now)
+  &::marker { content: none; } // avoid list style interference in some contexts
+  
+  // In dark mode, increase glow slightly
+  [data-theme="dark"] & {
+    @include eb.electric-border(#ffffff, 12px, 1.5px, 1);
+  }
   
   .repo-header {
     display: flex;

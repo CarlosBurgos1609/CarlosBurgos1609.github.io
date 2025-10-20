@@ -1,0 +1,91 @@
+// Electric/Neon border utility
+// Usage: @include electric-border($color, $radius, $width, $glow-strength)
+// Box-shadows render outside even if overflow is hidden.
+
+@mixin electric-border($color: #00fffb, $radius: 12px, $width: 2px, $glow-strength: 1) {
+  position: relative;
+  // Do NOT override existing border in idle state
+  border-radius: $radius;
+  // No idle neon/glow by default
+  box-shadow: none;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+
+  // Idle state: only subtle glow (no electrified edge)
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  // Active interaction states that enable the electrified edge
+  &:is(:hover, :focus-visible, .is-active, .active, [data-active='true'], [aria-selected='true']) {
+    // Colorize existing border only when active
+    border-color: $color;
+    // Electrified jagged edge using pseudo-element + SVG displacement
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: $radius;
+      border: $width solid $color;
+      filter: url(#electric-displace);
+      // two-pass blur to enhance edges
+      box-shadow:
+        0 0 8px rgba($color, 0.75 * $glow-strength),
+        0 0 24px rgba($color, 0.45 * $glow-strength);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    // Overlay sheen for dramatic effect
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: $radius;
+      mix-blend-mode: overlay;
+      filter: blur(14px);
+      background: linear-gradient(
+        -30deg,
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0) 30%,
+        rgba(255,255,255,0) 70%,
+        rgba(255,255,255,0.6)
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    // Stronger glow on hover/active
+    box-shadow:
+      0 0 10px rgba($color, 0.9 * $glow-strength),
+      0 0 22px rgba($color, 0.7 * $glow-strength),
+      0 0 40px rgba($color, 0.55 * $glow-strength),
+      0 0 78px rgba($color, 0.4 * $glow-strength);
+  }
+
+  // Optional background glow element (only visible in active states)
+  .__electric-bg-glow { display: none; }
+  &:is(:hover, :focus-visible, .is-active, .active, [data-active='true'], [aria-selected='true']) .__electric-bg-glow {
+    display: block;
+    position: absolute;
+    inset: -10px;
+    border-radius: $radius;
+    filter: blur(28px);
+    transform: scale(1.02);
+    opacity: 0.35;
+    z-index: -1;
+    background: linear-gradient(
+      -30deg,
+      rgba($color, 0.8),
+      rgba($color, 0) 40%,
+      rgba($color, 0.7)
+    );
+    pointer-events: none;
+  }
+}
+
+// Convenience helper classes (optional)
+.neon-cyan   { @include electric-border(#5900ff, 12px, 2px); }
+.neon-yellow { @include electric-border(#777e00, 12px, 2px); }
+.neon-red    { @include electric-border(#ff0000, 12px, 2px); }
+.neon-green  { @include electric-border(#0c963c, 12px, 2px); }

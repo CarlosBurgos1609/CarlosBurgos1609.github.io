@@ -5,6 +5,7 @@
 @use './components/variables' as vars;
 @use './components/base';
 @use './mixin' as m;
+@use './components/electric-border' as eb;
 
 // Import layout components
 @use './components/header';
